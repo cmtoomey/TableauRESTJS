@@ -20,20 +20,20 @@ You can find more details about the elements and attributes at http://onlinehelp
 The items that go into [stuff] fall into a few categories, activity and target. The snippets use that basic categorization to help with finding what you want.
 
 ####Activities
--Create (c)
--Add (a)
--Delete (d)
--Update (u)
--Query (q)
+- Create (c)
+- Add (a)
+- Delete (d)
+- Update (u)
+- Query (q)
 
 ####Targets
--Sites (s)
--Data Sources (d)
--File Upload (f)
--Groups (g)
--Projects (pr)
--Permissions (p)
--Users (u)
+- Sites (s)
+- Data Sources (d)
+- File Upload (f)
+- Groups (g)
+- Projects (pr)
+- Permissions (p)
+- Users (u)
 
 ####Example
 If you want to create a site: trcs.
