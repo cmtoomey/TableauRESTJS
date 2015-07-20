@@ -11,10 +11,10 @@ You always want to start with **trlogin**. This will create the variables and lo
 
 In the login function, there is also sample code you can re-use to extract different ID values from the API response codes. The basic syntax goes like this:
 
-var1 = response.getElementsByTagName('item you want')[0];
-var2 = var1.getAttribute('attribute')
+- var1 = response.getElementsByTagName('item you want')[0];
+- var2 = var1.getAttribute('attribute');
 
-You can find more details about the elements and attributes at http://onlinehelp.tableau.com/current/api/rest_api/en-us/help.htm#REST/rest_api_ref.htm#API_Reference%3FTocPath%3DAPI%2520Reference%7C_____0
+You can find more details about the elements and attributes [here](http://onlinehelp.tableau.com/current/api/rest_api/en-us/help.htm#REST/rest_api_ref.htm#API_Reference%3FTocPath%3DAPI%2520Reference%7C_____0)
 
 ### Snippet Convention
 The items that go into **[activity]** and **[target]** fall into a few categories, activity and target. The snippets use that basic categorization to help with finding what you want.
