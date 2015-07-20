@@ -1,0 +1,22 @@
+'.source.js':
+  'Query Datasources':
+    'prefix': 'trqds'
+    'body': """
+            //Query Datasources
+            //Returns name, type, project id, project name, tags for all datasources on that site
+            function queryDatasources() {
+              var settings = {
+                "async": true,
+                "crossDomain": true,
+                "url": url + "sites/" + siteid + "/datasources",
+                "method": "GET",
+                "headers": {
+                  "x-tableau-auth": auth
+                }
+              }
+
+              $.ajax(settings).done(function(response) {
+                console.log(response);
+              });
+            }
+            """

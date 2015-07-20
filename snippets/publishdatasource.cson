@@ -1,0 +1,31 @@
+'.source.js':
+  'Publish Data Source':
+    'prefix': 'trpd'
+    'body': """
+            //Publish Data Source
+            //You will need to change PROJECT ID and DATASOURCENAME
+            function pubDataSource() {
+              var form = new FormData();
+              form.append("request_payload", "<tsRequest><datasource name=\"DATASOURCENAME\" ><project id=\"PROJECTID\" ></project></datasource></tsRequest>");
+              form.append("tableau_datasource", "PATHTODATASOURCE");
+
+              var settings = {
+                "async": true,
+                "crossDomain": true,
+                "url": url + "sites/" + siteid + "/datasources?overwrite=true",
+                "method": "POST",
+                "headers": {
+                  "x-tableau-auth": auth
+                },
+                "processData": false,
+                "contentType": false,
+                "mimeType": "multipart/mixed",
+                "data": form
+              }
+
+              $.ajax(settings).done(function(response) {
+                console.log(response);
+              });
+            }
+            
+            """

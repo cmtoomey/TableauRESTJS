@@ -1,0 +1,27 @@
+'.source.js':
+  'Update Data Source Connection':
+    'prefix': 'trudc'
+    'body': """
+            //Update Data Source Connection
+            //Update Server address: connection serverAddress
+            //Update Port: serverPort
+            //Update Username: userName
+            //Update Password: password
+            //Datasource ID comes after /datasources/
+            function updateDsConnection() {
+              var settings = {
+                "async": true,
+                "crossDomain": true,
+                "url": url + "sites/" + siteid + "/datasources/73bc79fd-1641-4aa5-a126-fd2ed5d431ad/connection",
+                "method": "PUT",
+                "headers": {
+                  "x-tableau-auth": auth
+                },
+                "data": "<tsRequest>\n\t<connection serverAddress=\"newAddr\" serverPort=\"5435\" userName=\"newUserName\" password=\"newPass\" />\n</tsRequest>"
+              }
+
+              $.ajax(settings).done(function(response) {
+                console.log(response);
+              });
+            }
+            """

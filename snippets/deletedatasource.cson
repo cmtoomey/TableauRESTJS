@@ -1,0 +1,22 @@
+'.source.js':
+  'Delete Data Source':
+    'prefix': 'trdd'
+    'body': """
+            //Delete Data Source
+            //Datasource ID comes after /datasources/
+            function deleteDatasource() {
+              var settings = {
+                "async": true,
+                "crossDomain": true,
+                "url": url + "sites/" + siteid + "/datasources/a2b9040d-224a-497f-9d89-65576e930317",
+                "method": "DELETE",
+                "headers": {
+                  "x-tableau-auth": auth
+                }
+              }
+
+              $.ajax(settings).done(function(response) {
+                console.log(response);
+              });
+            }
+            """

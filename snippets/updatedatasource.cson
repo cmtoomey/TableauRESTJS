@@ -1,0 +1,28 @@
+'.source.js':
+  'Update Data Source':
+    'prefix': 'trud'
+    'body': """
+            //Update Data Source
+            //Change project or owner
+            //all fields are optional, change as many as you want
+            //data source name = new data source name
+            //project id = new project
+            //owner id = new owner
+            //Datasource ID comes after /datasources/
+            function updateDatasource() {
+              var settings = {
+                "async": true,
+                "crossDomain": true,
+                "url": url + "sites/" + siteid + "/datasources/73bc79fd-1641-4aa5-a126-fd2ed5d431ad",
+                "method": "PUT",
+                "headers": {
+                  "x-tableau-auth": auth
+                },
+                "data": "<tsRequest>\n  <datasource name=\"new-datasource-name\" >\n     <project id=\"new-project-id\"/>\n     <owner id=\"new-owner-id\"/>\n </datasource>\n</tsRequest>"
+              }
+
+              $.ajax(settings).done(function(response) {
+                console.log(response);
+              });
+            }
+            """

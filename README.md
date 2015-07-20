@@ -53,14 +53,14 @@ The full list is below.
   * Update Site - trus **
   * Delete Site - trds **
 2. Datasources
-  * Query Datasources - trqds
-  * Query Datasource - trqd
-  * Delete Datasource - trdd
-  * Download Datasource - trdld
-  * Update Datasource - trud
-  * Update Datasource Connection - trudc
-  * Query Datasource Connection for workbook - trqdw
-  * Publish Datasource - trpd
+  * Query Datasources - trqds **
+  * Query Datasource - trqd **
+  * Delete Datasource - trdd **
+  * Download Datasource - trdld **
+  * Update Datasource - trud **
+  * Update Datasource Connection - trudc **
+  * Query Datasource Connection for workbook - trqdw **
+  * Publish Datasource - trpd **
   * File Upload Start - trsupload
   * Append to Upload - traupload
   * Publish from Upload - trpupload

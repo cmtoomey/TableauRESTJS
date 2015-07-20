@@ -1,0 +1,23 @@
+'.source.js':
+  'Query Data Source Conn for TWB':
+    'prefix': 'trqdw'
+    'body': """
+            //Query Data Source Connection for specific workbook
+            //Returns Connection ID, connection type, server address, server port, username,
+            //Datasource ID comes after /datasources/
+            function queryDsConnection() {
+              var settings = {
+                "async": true,
+                "crossDomain": true,
+                "url": url + "sites/" + siteid + "/datasources/73bc79fd-1641-4aa5-a126-fd2ed5d431ad/connection",
+                "method": "GET",
+                "headers": {
+                  "x-tableau-auth": auth
+                }
+              }
+
+              $.ajax(settings).done(function(response) {
+                console.log(response);
+              });
+            }
+            """
