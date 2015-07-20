@@ -43,12 +43,12 @@ The full list is below.
 - Login - trlogin
 - Logout - trlogout
 1. Sites
-..*Query Sites - trqss
-..*Create Site - trcs
-..*Query Site - trqs
-..*Query Site Info - trqsinfo
-..*Update Site - trus
-..*Delete Site
+..* Query Sites - trqss
+..* Create Site - trcs
+..* Query Site - trqs
+..* Query Site Info - trqsinfo
+..* Update Site - trus
+..* Delete Site
 
 ## License
 
