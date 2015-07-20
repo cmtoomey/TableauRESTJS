@@ -1,0 +1,29 @@
+'.source.js':
+  'Create Site':
+    'prefix': 'trcs'
+    'body': """
+            //Create a Site
+            //site-name is how it appears in the UI
+            //content-url is how it appears in the Tableau Server URL
+            //admin-mode is optional. Specifies who can add/remove users via interface or tabcmd
+            //num-users optional. Specifies maximum users for the site
+            //storage-quota is optional. Specifies max amount of space
+            //disable-subscriptions is optional. True disables subscriptions on that site, default is false.
+            function createSite() {
+              // body...
+              var settings = {
+                "async": true,
+                "crossDomain": true,
+                "url": url + "sites",
+                "method": "POST",
+                "headers": {
+                  "x-tableau-auth": auth
+                },
+                "data": "<tsRequest>\n\t<site name=\"russell\"\n    contentUrl=\"russellSite\"\n    adminMode=\"ContentAndUsers\"\n    userQuota=\"10\"\n    storageQuota=\"40\"\n  disableSubscriptions=\"false\"/>\n</tsRequest>"
+              }
+
+              $.ajax(settings).done(function(response) {
+                console.log(response);
+              });
+            }
+            """

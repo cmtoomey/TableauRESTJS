@@ -51,7 +51,7 @@ The full list is below.
   * Query Site - trqs **
   * Query Site Info - trqsinfo **
   * Update Site - trus **
-  * Delete Site - trds 
+  * Delete Site - trds **
 2. Datasources
   * Query Datasources - trqds
   * Query Datasource - trqd

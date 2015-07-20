@@ -1,0 +1,45 @@
+'.source.js':
+  'Tableau login':
+    'prefix': 'trlogin'
+    'body': """
+            //for tablogin - always use this first
+            //WARNING: this will pass the password in cleartext
+            var auth = ""
+            var siteid = ""
+            var userid = ""
+            var url = "defineyourURLhere/" + "api/2.0/"
+            var uploadsess = ""
+
+            function tabLogin() {
+              var settings = {
+                "async": true,
+                "crossDomain": true,
+                "url": url + "auth/signin",
+                "method": "POST",
+                "headers": {},
+                //REMINDER: THIS PASSWORD IS IN CLEARTEXT!!!!!!
+                "data": "<tsRequest>\n\t<credentials name=\"Admin\" password=\"password\">\n    \t<site contentUrl=\"\" />\n      </credentials>\n</tsRequest>"
+                }
+                //This is a method to target the parts of the XML response
+                //You can use a for loop to get ones with more data points (like sites)
+              $.ajax(settings).done(function(response) {
+                console.log(response);
+                txt = response.getElementsByTagName('credentials')[0];
+                token = txt.getAttribute('token');
+                console.log(token);
+                list1 = response.getElementsByTagName('site')[0];
+                site = list1.getAttribute('id');
+                console.log(site);
+                list2 = response.getElementsByTagName('user')[0]
+                user = list2.getAttribute('id');
+                console.log(user);
+                auth = token;
+                siteid = site;
+                userid = user;
+              });
+            }
+
+            $(document).ready(function() {
+              tablogin();
+            })
+            """

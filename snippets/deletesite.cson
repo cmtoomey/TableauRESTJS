@@ -1,0 +1,25 @@
+'.source.js':
+  'Delete Site':
+    'prefix': 'trds'
+    'body': """
+            //Delete Site
+            //URL sites/site-id (number from API)
+            //URL sites/site-name?key=name (actual site name: "Default")
+            //URL sites/content-url?key=contentURL (contentURL from URL in Server)
+            function deleteSite() {
+              var settings = {
+                "async": true,
+                "crossDomain": true,
+                "url": url + "sites/" + siteid,
+                "method": "DELETE",
+                "headers": {
+                  "x-tableau-auth": auth
+                },
+                "data": "<tsRequest>\n\t<site name=\"russell\"\n    contentUrl=\"russellSite\"\n    adminMode=\"ContentAndUsers\"\n    userQuota=\"10\"\n    storageQuota=\"40\"\n  disableSubscriptions=\"false\"/>\n</tsRequest>"
+              }
+
+              $.ajax(settings).done(function(response) {
+                console.log(response);
+              });
+            }
+            """

@@ -1,0 +1,23 @@
+'.source.js':
+  'Query Sites':
+    'prefix': 'trqss'
+    'body': """
+      //get all SiteIDs, names, and urls
+      //returns N pages of sites
+      //Returns name, content URL, Admin mode, user quota, storage quota, state, number of users, current storage, and status reason
+      function querySites() {
+        var settings = {
+          "async": true,
+          "crossDomain": true,
+          "url": url + "sites/",
+          "method": "GET",
+          "headers": {
+            "x-tableau-auth": auth
+          }
+        }
+
+        $.ajax(settings).done(function(response) {
+          console.log(response);
+        });
+      }
+      """

@@ -1,0 +1,21 @@
+'.source.js':
+  'Tableau Logout':
+    'prefix': 'trlogout'
+    'body': """
+      //for tablogout
+      function tabLogout(token) {
+        var settings = {
+          "async": true,
+          "crossDomain": true,
+          "url": url + "auth/signout",
+          "method": "POST",
+          "headers": {
+            "x-tableau-auth": token
+          }
+        }
+
+        $.ajax(settings).done(function(response) {
+          console.log(response);
+        });
+      }
+      """

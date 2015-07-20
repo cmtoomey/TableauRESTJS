@@ -1,0 +1,25 @@
+'.source.js':
+  'Query Site Info':
+    'prefix': 'trqsinfo'
+    'body': """
+            //Site information + Storage
+            //URL sites/site-id (number from API)
+            //URL sites/site-name?key=name (actual site name: "Default")
+            //URL sites/content-url?key=contentURL (contentURL from URL in Server)
+            //Returns name, content URL, Admin mode, user quota, storage quota, state, number of users, current storage
+            function querySiteInfo() {
+              var settings = {
+                "async": true,
+                "crossDomain": true,
+                "url": url + "sites/Default?key=name&includeUsage=true",
+                "method": "GET",
+                "headers": {
+                  "x-tableau-auth": auth
+                }
+              }
+
+              $.ajax(settings).done(function(response) {
+                console.log(response);
+              });
+            }
+            """
