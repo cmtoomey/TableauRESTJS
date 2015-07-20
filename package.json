@@ -1,0 +1,22 @@
+{
+  "name": "tableau-rest-snippets",
+  "main": "./lib/tableau-rest-snippets",
+  "version": "1.0",
+  "description": "Tableau REST API Snippets - Javascript",
+  "author": {
+    "name": "Chris Toomey",
+    "email": "chris.toomey@slalom.com",
+    "url": "https://christoomey.atavist.com/tableauing-dangerously"
+  },
+  "activationCommands": {
+    "atom-text-editor": [
+      "tableau-rest-snippets:toggle"
+    ]
+  },
+  "repository": "https://github.com/cmtoomey/TableauRESTJS",
+  "license": "MIT",
+  "engines": {
+    "atom": ">=0.174.0 <2.0.0"
+  },
+  "dependencies": {}
+}
