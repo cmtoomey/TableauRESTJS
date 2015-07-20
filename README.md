@@ -43,15 +43,15 @@ If you want to create a site: 'trcs'. If you want to delete a user: 'trdu'.
 The full list is below.
 
 ##Full list of functions and snippets
-- Login - trlogin
-- Logout - trlogout
+- Login - trlogin **
+- Logout - trlogout **
 1. Sites
-  * Query Sites - trqss
-  * Create Site - trcs
-  * Query Site - trqs
-  * Query Site Info - trqsinfo
-  * Update Site - trus
-  * Delete Site - trds
+  * Query Sites - trqss **
+  * Create Site - trcs **
+  * Query Site - trqs **
+  * Query Site Info - trqsinfo **
+  * Update Site - trus **
+  * Delete Site - trds 
 2. Datasources
   * Query Datasources - trqds
   * Query Datasource - trqd
