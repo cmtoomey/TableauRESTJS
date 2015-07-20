@@ -7,7 +7,7 @@ Go to `atom > Preferences...` then search for Tableau REST Snippets in the `Inst
 All the snippets follow this convention
 **tr[activity][target]**
 
-You always want to start with **trlogin**. This will create the variables and login function you will need to do everything else with the API. Logout is accomplished with t-rlogout.
+You always want to start with **trlogin**. This will create the variables and login function you will need to do everything else with the API. Logout is accomplished with **trlogout**.
 
 In the login function, there is also sample code you can re-use to extract different ID values from the API response codes. The basic syntax goes like this:
 
@@ -36,10 +36,20 @@ The items that go into **[activity]** and **[target]** fall into a few categorie
 - Users (u)
 
 ####Example
-If you want to create a site: trcs.
-If you want to delete a user: trdu.
+If you want to create a site: 'trcs'. If you want to delete a user: 'trdu'.
 The full list is below.
+
+##Full list of functions and snippets
+- Login - trlogin
+- Logout - trlogout
+1. Sites
+..*Query Sites - trqss
+..*Create Site - trcs
+..*Query Site - trqs
+..*Query Site Info - trqsinfo
+..*Update Site - trus
+..*Delete Site
 
 ## License
 
-[MIT License](http://robdodson.mit-license.org/) © Chris Toomey
+[MIT License](http://cmtoomey.mit-license.org/) © Chris Toomey
