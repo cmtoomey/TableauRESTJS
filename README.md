@@ -40,7 +40,7 @@ The items that go into **[activity]** and **[target]** fall into a few categorie
 
 ####Example
 If you want to login, use 'trlogin'.
-![alt tag](http://Users/chris.toomey/Desktop/login.gif)
+![alt tag](https://www.dropbox.com/s/wvufimiop6bqglh/login.gif?dl=0)
 
 If you want to create a site, use 'trcs'.
 
