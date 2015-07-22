@@ -1,0 +1,24 @@
+'.source.js':
+  'Update Group':
+    'prefix': 'trug'
+    'body': """
+            //Update Group
+            //change group name below
+            //Group ID comes after /groups/
+            function updateGroup() {
+              var settings = {
+                "async": true,
+                "crossDomain": true,
+                "url": url + "sites/" + siteid + "/groups/fdb6d216-69d3-4d0d-a51c-79d95dc3b198",
+                "method": "PUT",
+                "headers": {
+                  "x-tableau-auth": auth
+                },
+                "data": "<tsRequest>\n  <group name=\"updatedGroupName\" />\n</tsRequest>"
+              }
+
+              $.ajax(settings).done(function(response) {
+                console.log(response);
+              });
+            }
+            """

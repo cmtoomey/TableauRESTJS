@@ -1,0 +1,29 @@
+'.source.js':
+  'Publish from Upload':
+    'prefix': 'trpupload'
+    'body': """
+            //Publish DataSource from Upload
+            //You can also use this method for publishing workbooks
+            function pubFromUpload() {
+              var form = new FormData();
+              form.append("request_payload", "<tsRequest><datasource name=\"chunkedDS\" ><connectionCredentials name=\"postgres\" password=\"admin\" embed=\"true\" ></connectionCredentials><project id=\"06ca4b01-f882-4f7a-b4b5-60eb8e8bff8f\" ></project></datasource></tsRequest>");
+
+              var settings = {
+                "async": true,
+                "crossDomain": true,
+                "url": url + "sites/" + siteid + "/datasources?uploadSessionId=" + uploadsess + "&datasourceType=tds",
+                "method": "POST",
+                "headers": {
+                  "x-tableau-auth": auth
+                },
+                "processData": false,
+                "contentType": false,
+                "mimeType": "multipart/form-data",
+                "data": form
+              }
+
+              $.ajax(settings).done(function(response) {
+                console.log(response);
+              });
+            }            
+            """

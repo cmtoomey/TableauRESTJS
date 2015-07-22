@@ -1,0 +1,701 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'node',
+1 verbose cli   '/usr/local/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   '-g',
+1 verbose cli   'generator-angular-fullstack',
+1 verbose cli   'generator-chrome-extension',
+1 verbose cli   'generator-chrome-extension-kickstart',
+1 verbose cli   'generator-polymer',
+1 verbose cli   'generator-mocha' ]
+2 info using npm@2.10.1
+3 info using node@v0.12.4
+4 verbose install initial load of /usr/local/lib/package.json
+5 verbose readDependencies loading dependencies from /usr/local/lib/package.json
+6 silly cache add args [ 'generator-angular-fullstack', null ]
+7 verbose cache add spec generator-angular-fullstack
+8 silly cache add args [ 'generator-chrome-extension', null ]
+9 verbose cache add spec generator-chrome-extension
+10 silly cache add args [ 'generator-chrome-extension-kickstart', null ]
+11 verbose cache add spec generator-chrome-extension-kickstart
+12 silly cache add args [ 'generator-polymer', null ]
+13 verbose cache add spec generator-polymer
+14 silly cache add args [ 'generator-mocha', null ]
+15 verbose cache add spec generator-mocha
+16 silly cache add parsed spec { raw: 'generator-angular-fullstack',
+16 silly cache add   scope: null,
+16 silly cache add   name: 'generator-angular-fullstack',
+16 silly cache add   rawSpec: '',
+16 silly cache add   spec: '*',
+16 silly cache add   type: 'range' }
+17 silly addNamed generator-angular-fullstack@*
+18 verbose addNamed "*" is a valid semver range for generator-angular-fullstack
+19 silly addNameRange { name: 'generator-angular-fullstack',
+19 silly addNameRange   range: '*',
+19 silly addNameRange   hasData: false }
+20 silly mapToRegistry name generator-angular-fullstack
+21 silly mapToRegistry using default registry
+22 silly mapToRegistry registry https://registry.npmjs.org/
+23 silly mapToRegistry uri https://registry.npmjs.org/generator-angular-fullstack
+24 verbose addNameRange registry:https://registry.npmjs.org/generator-angular-fullstack not in flight; fetching
+25 silly cache add parsed spec { raw: 'generator-chrome-extension',
+25 silly cache add   scope: null,
+25 silly cache add   name: 'generator-chrome-extension',
+25 silly cache add   rawSpec: '',
+25 silly cache add   spec: '*',
+25 silly cache add   type: 'range' }
+26 silly addNamed generator-chrome-extension@*
+27 verbose addNamed "*" is a valid semver range for generator-chrome-extension
+28 silly addNameRange { name: 'generator-chrome-extension',
+28 silly addNameRange   range: '*',
+28 silly addNameRange   hasData: false }
+29 silly mapToRegistry name generator-chrome-extension
+30 silly mapToRegistry using default registry
+31 silly mapToRegistry registry https://registry.npmjs.org/
+32 silly mapToRegistry uri https://registry.npmjs.org/generator-chrome-extension
+33 verbose addNameRange registry:https://registry.npmjs.org/generator-chrome-extension not in flight; fetching
+34 silly cache add parsed spec { raw: 'generator-chrome-extension-kickstart',
+34 silly cache add   scope: null,
+34 silly cache add   name: 'generator-chrome-extension-kickstart',
+34 silly cache add   rawSpec: '',
+34 silly cache add   spec: '*',
+34 silly cache add   type: 'range' }
+35 silly addNamed generator-chrome-extension-kickstart@*
+36 verbose addNamed "*" is a valid semver range for generator-chrome-extension-kickstart
+37 silly addNameRange { name: 'generator-chrome-extension-kickstart',
+37 silly addNameRange   range: '*',
+37 silly addNameRange   hasData: false }
+38 silly mapToRegistry name generator-chrome-extension-kickstart
+39 silly mapToRegistry using default registry
+40 silly mapToRegistry registry https://registry.npmjs.org/
+41 silly mapToRegistry uri https://registry.npmjs.org/generator-chrome-extension-kickstart
+42 verbose addNameRange registry:https://registry.npmjs.org/generator-chrome-extension-kickstart not in flight; fetching
+43 silly cache add parsed spec { raw: 'generator-polymer',
+43 silly cache add   scope: null,
+43 silly cache add   name: 'generator-polymer',
+43 silly cache add   rawSpec: '',
+43 silly cache add   spec: '*',
+43 silly cache add   type: 'range' }
+44 silly addNamed generator-polymer@*
+45 verbose addNamed "*" is a valid semver range for generator-polymer
+46 silly addNameRange { name: 'generator-polymer', range: '*', hasData: false }
+47 silly mapToRegistry name generator-polymer
+48 silly mapToRegistry using default registry
+49 silly mapToRegistry registry https://registry.npmjs.org/
+50 silly mapToRegistry uri https://registry.npmjs.org/generator-polymer
+51 verbose addNameRange registry:https://registry.npmjs.org/generator-polymer not in flight; fetching
+52 silly cache add parsed spec { raw: 'generator-mocha',
+52 silly cache add   scope: null,
+52 silly cache add   name: 'generator-mocha',
+52 silly cache add   rawSpec: '',
+52 silly cache add   spec: '*',
+52 silly cache add   type: 'range' }
+53 silly addNamed generator-mocha@*
+54 verbose addNamed "*" is a valid semver range for generator-mocha
+55 silly addNameRange { name: 'generator-mocha', range: '*', hasData: false }
+56 silly mapToRegistry name generator-mocha
+57 silly mapToRegistry using default registry
+58 silly mapToRegistry registry https://registry.npmjs.org/
+59 silly mapToRegistry uri https://registry.npmjs.org/generator-mocha
+60 verbose addNameRange registry:https://registry.npmjs.org/generator-mocha not in flight; fetching
+61 verbose request uri https://registry.npmjs.org/generator-chrome-extension-kickstart
+62 verbose request no auth needed
+63 info attempt registry request try #1 at 6:57:44 PM
+64 verbose request id 291e4de8533d42b3
+65 verbose etag "C308029XFFPCQBMKMLCFIV9F0"
+66 http request GET https://registry.npmjs.org/generator-chrome-extension-kickstart
+67 verbose request uri https://registry.npmjs.org/generator-polymer
+68 verbose request no auth needed
+69 info attempt registry request try #1 at 6:57:44 PM
+70 verbose etag "7F3XQS9KSESMRJAFUA42OSR3J"
+71 http request GET https://registry.npmjs.org/generator-polymer
+72 verbose request uri https://registry.npmjs.org/generator-chrome-extension
+73 verbose request no auth needed
+74 info attempt registry request try #1 at 6:57:44 PM
+75 verbose etag "28GHHC25KGMO3GPHXBXOE74L9"
+76 http request GET https://registry.npmjs.org/generator-chrome-extension
+77 verbose request uri https://registry.npmjs.org/generator-angular-fullstack
+78 verbose request no auth needed
+79 info attempt registry request try #1 at 6:57:44 PM
+80 verbose etag "8N8J5988INGB7R8UUCOUJM2D5"
+81 http request GET https://registry.npmjs.org/generator-angular-fullstack
+82 verbose request uri https://registry.npmjs.org/generator-mocha
+83 verbose request no auth needed
+84 info attempt registry request try #1 at 6:57:44 PM
+85 verbose etag "47QICQQQPBN2WVGV35L19B8T5"
+86 http request GET https://registry.npmjs.org/generator-mocha
+87 http 304 https://registry.npmjs.org/generator-chrome-extension-kickstart
+88 silly get cb [ 304,
+88 silly get   { date: 'Wed, 22 Jul 2015 01:57:43 GMT',
+88 silly get     via: '1.1 varnish',
+88 silly get     'cache-control': 'max-age=60',
+88 silly get     etag: '"C308029XFFPCQBMKMLCFIV9F0"',
+88 silly get     age: '0',
+88 silly get     connection: 'keep-alive',
+88 silly get     'x-served-by': 'cache-dfw1823-DFW',
+88 silly get     'x-cache': 'MISS',
+88 silly get     'x-cache-hits': '0',
+88 silly get     'x-timer': 'S1437530263.081481,VS0,VE60',
+88 silly get     vary: 'Accept' } ]
+89 verbose etag https://registry.npmjs.org/generator-chrome-extension-kickstart from cache
+90 verbose get saving generator-chrome-extension-kickstart to /Users/chris.toomey/.npm/registry.npmjs.org/generator-chrome-extension-kickstart/.cache.json
+91 silly addNameRange number 2 { name: 'generator-chrome-extension-kickstart',
+91 silly addNameRange   range: '*',
+91 silly addNameRange   hasData: true }
+92 silly addNameRange versions [ 'generator-chrome-extension-kickstart', [ '0.0.1', '0.0.2' ] ]
+93 silly addNamed generator-chrome-extension-kickstart@0.0.2
+94 verbose addNamed "0.0.2" is a plain semver version for generator-chrome-extension-kickstart
+95 silly cache afterAdd generator-chrome-extension-kickstart@0.0.2
+96 verbose afterAdd /Users/chris.toomey/.npm/generator-chrome-extension-kickstart/0.0.2/package/package.json not in flight; writing
+97 verbose afterAdd /Users/chris.toomey/.npm/generator-chrome-extension-kickstart/0.0.2/package/package.json written
+98 http 200 https://registry.npmjs.org/generator-mocha
+99 silly get cb [ 200,
+99 silly get   { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+99 silly get     etag: '"CTCMN1TNFLNBFAXWX66C54AZE"',
+99 silly get     'content-type': 'application/json',
+99 silly get     'cache-control': 'max-age=60',
+99 silly get     'content-length': '13995',
+99 silly get     'accept-ranges': 'bytes',
+99 silly get     date: 'Wed, 22 Jul 2015 01:57:43 GMT',
+99 silly get     via: '1.1 varnish',
+99 silly get     age: '0',
+99 silly get     connection: 'keep-alive',
+99 silly get     'x-served-by': 'cache-dfw1823-DFW',
+99 silly get     'x-cache': 'MISS',
+99 silly get     'x-cache-hits': '0',
+99 silly get     'x-timer': 'S1437530263.102276,VS0,VE65',
+99 silly get     vary: 'Accept' } ]
+100 verbose get saving generator-mocha to /Users/chris.toomey/.npm/registry.npmjs.org/generator-mocha/.cache.json
+101 silly addNameRange number 2 { name: 'generator-mocha', range: '*', hasData: true }
+102 silly addNameRange versions [ 'generator-mocha',
+102 silly addNameRange   [ '0.1.0',
+102 silly addNameRange     '0.1.1',
+102 silly addNameRange     '0.1.2',
+102 silly addNameRange     '0.1.3',
+102 silly addNameRange     '0.1.4',
+102 silly addNameRange     '0.1.5',
+102 silly addNameRange     '0.1.6',
+102 silly addNameRange     '0.1.7',
+102 silly addNameRange     '0.1.8',
+102 silly addNameRange     '0.2.0' ] ]
+103 silly addNamed generator-mocha@0.2.0
+104 verbose addNamed "0.2.0" is a plain semver version for generator-mocha
+105 silly cache afterAdd generator-mocha@0.2.0
+106 verbose afterAdd /Users/chris.toomey/.npm/generator-mocha/0.2.0/package/package.json not in flight; writing
+107 verbose afterAdd /Users/chris.toomey/.npm/generator-mocha/0.2.0/package/package.json written
+108 http 200 https://registry.npmjs.org/generator-chrome-extension
+109 silly get cb [ 200,
+109 silly get   { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+109 silly get     etag: '"4BM1L9X931EZMPG1T89UFGPBG"',
+109 silly get     'content-type': 'application/json',
+109 silly get     'cache-control': 'max-age=60',
+109 silly get     'content-length': '28063',
+109 silly get     'accept-ranges': 'bytes',
+109 silly get     date: 'Wed, 22 Jul 2015 01:57:43 GMT',
+109 silly get     via: '1.1 varnish',
+109 silly get     age: '0',
+109 silly get     connection: 'keep-alive',
+109 silly get     'x-served-by': 'cache-dfw1828-DFW',
+109 silly get     'x-cache': 'MISS',
+109 silly get     'x-cache-hits': '0',
+109 silly get     'x-timer': 'S1437530263.101919,VS0,VE91',
+109 silly get     vary: 'Accept' } ]
+110 verbose get saving generator-chrome-extension to /Users/chris.toomey/.npm/registry.npmjs.org/generator-chrome-extension/.cache.json
+111 silly addNameRange number 2 { name: 'generator-chrome-extension', range: '*', hasData: true }
+112 silly addNameRange versions [ 'generator-chrome-extension',
+112 silly addNameRange   [ '0.1.0',
+112 silly addNameRange     '0.1.1',
+112 silly addNameRange     '0.2.0',
+112 silly addNameRange     '0.2.1',
+112 silly addNameRange     '0.2.2',
+112 silly addNameRange     '0.2.3',
+112 silly addNameRange     '0.2.4',
+112 silly addNameRange     '0.2.5',
+112 silly addNameRange     '0.2.6',
+112 silly addNameRange     '0.2.7',
+112 silly addNameRange     '0.2.8',
+112 silly addNameRange     '0.2.9',
+112 silly addNameRange     '0.2.10',
+112 silly addNameRange     '0.2.11',
+112 silly addNameRange     '0.3.0',
+112 silly addNameRange     '0.3.1' ] ]
+113 silly addNamed generator-chrome-extension@0.3.1
+114 verbose addNamed "0.3.1" is a plain semver version for generator-chrome-extension
+115 silly cache afterAdd generator-chrome-extension@0.3.1
+116 verbose afterAdd /Users/chris.toomey/.npm/generator-chrome-extension/0.3.1/package/package.json not in flight; writing
+117 verbose afterAdd /Users/chris.toomey/.npm/generator-chrome-extension/0.3.1/package/package.json written
+118 http 200 https://registry.npmjs.org/generator-polymer
+119 silly get cb [ 200,
+119 silly get   { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+119 silly get     etag: '"7VAFU0F3MNRQ1PMU121OUEKLV"',
+119 silly get     'content-type': 'application/json',
+119 silly get     'cache-control': 'max-age=60',
+119 silly get     'content-length': '53806',
+119 silly get     'accept-ranges': 'bytes',
+119 silly get     date: 'Wed, 22 Jul 2015 01:57:43 GMT',
+119 silly get     via: '1.1 varnish',
+119 silly get     age: '0',
+119 silly get     connection: 'keep-alive',
+119 silly get     'x-served-by': 'cache-dfw1833-DFW',
+119 silly get     'x-cache': 'MISS',
+119 silly get     'x-cache-hits': '0',
+119 silly get     'x-timer': 'S1437530263.102021,VS0,VE66',
+119 silly get     vary: 'Accept' } ]
+120 verbose get saving generator-polymer to /Users/chris.toomey/.npm/registry.npmjs.org/generator-polymer/.cache.json
+121 silly addNameRange number 2 { name: 'generator-polymer', range: '*', hasData: true }
+122 silly addNameRange versions [ 'generator-polymer',
+122 silly addNameRange   [ '0.0.2',
+122 silly addNameRange     '0.0.3',
+122 silly addNameRange     '0.0.4',
+122 silly addNameRange     '0.0.5',
+122 silly addNameRange     '0.0.6',
+122 silly addNameRange     '0.0.7',
+122 silly addNameRange     '0.0.8',
+122 silly addNameRange     '0.0.9',
+122 silly addNameRange     '0.1.1',
+122 silly addNameRange     '0.2.2',
+122 silly addNameRange     '0.3.0',
+122 silly addNameRange     '0.3.1',
+122 silly addNameRange     '0.4.0-1',
+122 silly addNameRange     '0.4.0',
+122 silly addNameRange     '0.4.1',
+122 silly addNameRange     '0.5.0',
+122 silly addNameRange     '0.5.1',
+122 silly addNameRange     '0.6.0',
+122 silly addNameRange     '0.6.1',
+122 silly addNameRange     '0.6.2',
+122 silly addNameRange     '0.6.3',
+122 silly addNameRange     '0.7.0',
+122 silly addNameRange     '0.7.1',
+122 silly addNameRange     '0.7.2',
+122 silly addNameRange     '1.0.0',
+122 silly addNameRange     '1.0.1',
+122 silly addNameRange     '1.0.2',
+122 silly addNameRange     '1.0.3',
+122 silly addNameRange     '1.0.4',
+122 silly addNameRange     '1.0.5-rc1',
+122 silly addNameRange     '1.0.5' ] ]
+123 silly addNamed generator-polymer@1.0.5
+124 verbose addNamed "1.0.5" is a plain semver version for generator-polymer
+125 silly mapToRegistry name generator-polymer
+126 silly mapToRegistry using default registry
+127 silly mapToRegistry registry https://registry.npmjs.org/
+128 silly mapToRegistry uri https://registry.npmjs.org/generator-polymer
+129 verbose addRemoteTarball https://registry.npmjs.org/generator-polymer/-/generator-polymer-1.0.5.tgz not in flight; adding
+130 verbose addRemoteTarball [ 'https://registry.npmjs.org/generator-polymer/-/generator-polymer-1.0.5.tgz',
+130 verbose addRemoteTarball   '07ec35bade32c3dcdc9660914f723305890bfc84' ]
+131 info retry fetch attempt 1 at 6:57:45 PM
+132 info attempt registry request try #1 at 6:57:45 PM
+133 http fetch GET https://registry.npmjs.org/generator-polymer/-/generator-polymer-1.0.5.tgz
+134 http 200 https://registry.npmjs.org/generator-angular-fullstack
+135 silly get cb [ 200,
+135 silly get   { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+135 silly get     etag: '"EB3V30I10XUR6NYN1I14802QY"',
+135 silly get     'content-type': 'application/json',
+135 silly get     'cache-control': 'max-age=60',
+135 silly get     'content-length': '82650',
+135 silly get     'accept-ranges': 'bytes',
+135 silly get     date: 'Wed, 22 Jul 2015 01:57:43 GMT',
+135 silly get     via: '1.1 varnish',
+135 silly get     age: '0',
+135 silly get     connection: 'keep-alive',
+135 silly get     'x-served-by': 'cache-dfw1828-DFW',
+135 silly get     'x-cache': 'HIT',
+135 silly get     'x-cache-hits': '1',
+135 silly get     'x-timer': 'S1437530263.094334,VS0,VE47',
+135 silly get     vary: 'Accept' } ]
+136 verbose get saving generator-angular-fullstack to /Users/chris.toomey/.npm/registry.npmjs.org/generator-angular-fullstack/.cache.json
+137 silly addNameRange number 2 { name: 'generator-angular-fullstack',
+137 silly addNameRange   range: '*',
+137 silly addNameRange   hasData: true }
+138 silly addNameRange versions [ 'generator-angular-fullstack',
+138 silly addNameRange   [ '0.0.1',
+138 silly addNameRange     '0.0.2',
+138 silly addNameRange     '0.0.3',
+138 silly addNameRange     '0.0.4',
+138 silly addNameRange     '0.0.5',
+138 silly addNameRange     '0.1.0',
+138 silly addNameRange     '0.2.0',
+138 silly addNameRange     '1.0.0',
+138 silly addNameRange     '1.0.1',
+138 silly addNameRange     '1.1.0',
+138 silly addNameRange     '1.1.1',
+138 silly addNameRange     '1.2.0',
+138 silly addNameRange     '1.2.1',
+138 silly addNameRange     '1.2.2',
+138 silly addNameRange     '1.2.3',
+138 silly addNameRange     '1.2.4',
+138 silly addNameRange     '1.2.5',
+138 silly addNameRange     '1.2.6',
+138 silly addNameRange     '1.2.7',
+138 silly addNameRange     '1.3.0',
+138 silly addNameRange     '1.3.1',
+138 silly addNameRange     '1.3.2',
+138 silly addNameRange     '1.3.3',
+138 silly addNameRange     '1.4.0',
+138 silly addNameRange     '1.4.1',
+138 silly addNameRange     '1.4.2',
+138 silly addNameRange     '1.4.3',
+138 silly addNameRange     '2.0.0-rc1',
+138 silly addNameRange     '2.0.0',
+138 silly addNameRange     '2.0.1',
+138 silly addNameRange     '2.0.2',
+138 silly addNameRange     '2.0.3',
+138 silly addNameRange     '2.0.4',
+138 silly addNameRange     '2.0.5',
+138 silly addNameRange     '2.0.6',
+138 silly addNameRange     '2.0.7',
+138 silly addNameRange     '2.0.8',
+138 silly addNameRange     '2.0.9',
+138 silly addNameRange     '2.0.10',
+138 silly addNameRange     '2.0.11',
+138 silly addNameRange     '2.0.12',
+138 silly addNameRange     '2.0.13',
+138 silly addNameRange     '2.1.0' ] ]
+139 silly addNamed generator-angular-fullstack@2.1.0
+140 verbose addNamed "2.1.0" is a plain semver version for generator-angular-fullstack
+141 silly mapToRegistry name generator-angular-fullstack
+142 silly mapToRegistry using default registry
+143 silly mapToRegistry registry https://registry.npmjs.org/
+144 silly mapToRegistry uri https://registry.npmjs.org/generator-angular-fullstack
+145 verbose addRemoteTarball https://registry.npmjs.org/generator-angular-fullstack/-/generator-angular-fullstack-2.1.0.tgz not in flight; adding
+146 verbose addRemoteTarball [ 'https://registry.npmjs.org/generator-angular-fullstack/-/generator-angular-fullstack-2.1.0.tgz',
+146 verbose addRemoteTarball   'e06c46d4d45551951bed771d3ca1e84cf1e5dfa1' ]
+147 info retry fetch attempt 1 at 6:57:45 PM
+148 info attempt registry request try #1 at 6:57:45 PM
+149 http fetch GET https://registry.npmjs.org/generator-angular-fullstack/-/generator-angular-fullstack-2.1.0.tgz
+150 http fetch 200 https://registry.npmjs.org/generator-polymer/-/generator-polymer-1.0.5.tgz
+151 http fetch 200 https://registry.npmjs.org/generator-angular-fullstack/-/generator-angular-fullstack-2.1.0.tgz
+152 silly fetchAndShaCheck shasum 07ec35bade32c3dcdc9660914f723305890bfc84
+153 verbose addTmpTarball /var/folders/p3/c4w1j39d25d1lstxm_tg52thrdhlh6/T/npm-10129-3f08bf38/registry.npmjs.org/generator-polymer/-/generator-polymer-1.0.5.tgz not in flight; adding
+154 verbose addTmpTarball already have metadata; skipping unpack for generator-polymer@1.0.5
+155 silly cache afterAdd generator-polymer@1.0.5
+156 verbose afterAdd /Users/chris.toomey/.npm/generator-polymer/1.0.5/package/package.json not in flight; writing
+157 verbose afterAdd /Users/chris.toomey/.npm/generator-polymer/1.0.5/package/package.json written
+158 silly fetchAndShaCheck shasum e06c46d4d45551951bed771d3ca1e84cf1e5dfa1
+159 verbose addTmpTarball /var/folders/p3/c4w1j39d25d1lstxm_tg52thrdhlh6/T/npm-10129-3f08bf38/registry.npmjs.org/generator-angular-fullstack/-/generator-angular-fullstack-2.1.0.tgz not in flight; adding
+160 verbose addTmpTarball already have metadata; skipping unpack for generator-angular-fullstack@2.1.0
+161 silly cache afterAdd generator-angular-fullstack@2.1.0
+162 verbose afterAdd /Users/chris.toomey/.npm/generator-angular-fullstack/2.1.0/package/package.json not in flight; writing
+163 verbose afterAdd /Users/chris.toomey/.npm/generator-angular-fullstack/2.1.0/package/package.json written
+164 silly install resolved [ { name: 'generator-chrome-extension-kickstart',
+164 silly install resolved     version: '0.0.2',
+164 silly install resolved     description: 'Yeoman generator',
+164 silly install resolved     license: 'BSD',
+164 silly install resolved     main: 'app/index.js',
+164 silly install resolved     repository:
+164 silly install resolved      { type: 'git',
+164 silly install resolved        url: 'git+https://github.com/HaNdTriX/generator-chrome-extension-kickstart.git' },
+164 silly install resolved     author:
+164 silly install resolved      { name: 'Henrik',
+164 silly install resolved        email: 'handtrix@gmail.com',
+164 silly install resolved        url: 'https://github.com/HaNdTriX' },
+164 silly install resolved     engines: { node: '>=0.10.0' },
+164 silly install resolved     scripts: { test: 'mocha' },
+164 silly install resolved     files: [ 'app' ],
+164 silly install resolved     keywords: [ 'yeoman-generator' ],
+164 silly install resolved     dependencies:
+164 silly install resolved      { 'yeoman-generator': '^0.18.0',
+164 silly install resolved        chalk: '^0.5.0',
+164 silly install resolved        yosay: '^0.3.0' },
+164 silly install resolved     devDependencies: { mocha: '*' },
+164 silly install resolved     peerDependencies: { yo: '>=1.0.0' },
+164 silly install resolved     gitHead: 'eadabb5d6b6742966b2ad7fa6096748dd98961a9',
+164 silly install resolved     bugs: { url: 'https://github.com/HaNdTriX/generator-chrome-extension-kickstart/issues' },
+164 silly install resolved     homepage: 'https://github.com/HaNdTriX/generator-chrome-extension-kickstart',
+164 silly install resolved     _id: 'generator-chrome-extension-kickstart@0.0.2',
+164 silly install resolved     _shasum: '9bca9eaae9834722f3f8f9ab0909fff65f5c5c4c',
+164 silly install resolved     _from: 'generator-chrome-extension-kickstart@*',
+164 silly install resolved     _npmVersion: '1.4.28',
+164 silly install resolved     _npmUser: { name: 'handtrix', email: 'handtrix@gmail.com' },
+164 silly install resolved     maintainers: [ [Object] ],
+164 silly install resolved     dist:
+164 silly install resolved      { shasum: '9bca9eaae9834722f3f8f9ab0909fff65f5c5c4c',
+164 silly install resolved        tarball: 'http://registry.npmjs.org/generator-chrome-extension-kickstart/-/generator-chrome-extension-kickstart-0.0.2.tgz' },
+164 silly install resolved     directories: {},
+164 silly install resolved     _resolved: 'https://registry.npmjs.org/generator-chrome-extension-kickstart/-/generator-chrome-extension-kickstart-0.0.2.tgz',
+164 silly install resolved     readme: 'ERROR: No README data found!' },
+164 silly install resolved   { name: 'generator-mocha',
+164 silly install resolved     version: '0.2.0',
+164 silly install resolved     description: 'Yeoman generator for Mocha',
+164 silly install resolved     license: 'BSD',
+164 silly install resolved     repository:
+164 silly install resolved      { type: 'git',
+164 silly install resolved        url: 'git+https://github.com/yeoman/generator-mocha.git' },
+164 silly install resolved     author: { name: 'The Yeoman Team' },
+164 silly install resolved     engines: { node: '>=0.10.0' },
+164 silly install resolved     scripts: { test: 'mocha' },
+164 silly install resolved     files: [ 'generators' ],
+164 silly install resolved     keywords:
+164 silly install resolved      [ 'yeoman-generator',
+164 silly install resolved        'scaffold',
+164 silly install resolved        'unit',
+164 silly install resolved        'test',
+164 silly install resolved        'testing',
+164 silly install resolved        'bdd',
+164 silly install resolved        'tdd',
+164 silly install resolved        'mocha' ],
+164 silly install resolved     dependencies: { 'yeoman-generator': '^0.19.2' },
+164 silly install resolved     devDependencies: { mocha: '*' },
+164 silly install resolved     gitHead: '0a9472822fa6203a74e17f7c550dfee21e65b8c1',
+164 silly install resolved     bugs: { url: 'https://github.com/yeoman/generator-mocha/issues' },
+164 silly install resolved     homepage: 'https://github.com/yeoman/generator-mocha#readme',
+164 silly install resolved     _id: 'generator-mocha@0.2.0',
+164 silly install resolved     _shasum: '5cfb28a71849818f2de7947eea346ea6c7f8fc58',
+164 silly install resolved     _from: 'generator-mocha@*',
+164 silly install resolved     _npmVersion: '2.9.1',
+164 silly install resolved     _nodeVersion: '0.12.3',
+164 silly install resolved     _npmUser: { name: 'silvenon', email: 'matija.marohnic@gmail.com' },
+164 silly install resolved     dist:
+164 silly install resolved      { shasum: '5cfb28a71849818f2de7947eea346ea6c7f8fc58',
+164 silly install resolved        tarball: 'http://registry.npmjs.org/generator-mocha/-/generator-mocha-0.2.0.tgz' },
+164 silly install resolved     maintainers: [ [Object], [Object], [Object], [Object], [Object], [Object] ],
+164 silly install resolved     directories: {},
+164 silly install resolved     _resolved: 'https://registry.npmjs.org/generator-mocha/-/generator-mocha-0.2.0.tgz',
+164 silly install resolved     readme: 'ERROR: No README data found!' },
+164 silly install resolved   { name: 'generator-chrome-extension',
+164 silly install resolved     version: '0.3.1',
+164 silly install resolved     description: 'Scaffold out a Chrome extension',
+164 silly install resolved     keywords: [ 'yeoman-generator', 'chrome', 'extension', 'addon' ],
+164 silly install resolved     author: { name: 'Yeoman' },
+164 silly install resolved     main: 'app/index.js',
+164 silly install resolved     repository:
+164 silly install resolved      { type: 'git',
+164 silly install resolved        url: 'git+https://github.com/yeoman/generator-chrome-extension.git' },
+164 silly install resolved     scripts: { test: 'mocha --reporter spec' },
+164 silly install resolved     dependencies: { 'yeoman-generator': '^0.18.10' },
+164 silly install resolved     peerDependencies: { 'generator-mocha': '>=0.1.6' },
+164 silly install resolved     devDependencies: { mocha: '*', underscore: '^1.7.2' },
+164 silly install resolved     engines: { node: '>=0.10.0' },
+164 silly install resolved     license: 'BSD',
+164 silly install resolved     files: [ 'app' ],
+164 silly install resolved     gitHead: '48b0ab38c6f2671f0241c70bd78204056b93bbb7',
+164 silly install resolved     bugs: { url: 'https://github.com/yeoman/generator-chrome-extension/issues' },
+164 silly install resolved     homepage: 'https://github.com/yeoman/generator-chrome-extension',
+164 silly install resolved     _id: 'generator-chrome-extension@0.3.1',
+164 silly install resolved     _shasum: 'e54f0aa6073922270e629d2bea1c638f4b9b3361',
+164 silly install resolved     _from: 'generator-chrome-extension@*',
+164 silly install resolved     _npmVersion: '2.7.0',
+164 silly install resolved     _nodeVersion: '0.10.29',
+164 silly install resolved     _npmUser: { name: 'ragingwind', email: 'ragingwind@gmail.com' },
+164 silly install resolved     maintainers:
+164 silly install resolved      [ [Object],
+164 silly install resolved        [Object],
+164 silly install resolved        [Object],
+164 silly install resolved        [Object],
+164 silly install resolved        [Object],
+164 silly install resolved        [Object],
+164 silly install resolved        [Object],
+164 silly install resolved        [Object] ],
+164 silly install resolved     dist:
+164 silly install resolved      { shasum: 'e54f0aa6073922270e629d2bea1c638f4b9b3361',
+164 silly install resolved        tarball: 'http://registry.npmjs.org/generator-chrome-extension/-/generator-chrome-extension-0.3.1.tgz' },
+164 silly install resolved     directories: {},
+164 silly install resolved     _resolved: 'https://registry.npmjs.org/generator-chrome-extension/-/generator-chrome-extension-0.3.1.tgz',
+164 silly install resolved     readme: 'ERROR: No README data found!' },
+164 silly install resolved   { name: 'generator-polymer',
+164 silly install resolved     version: '1.0.5',
+164 silly install resolved     description: 'Scaffold out a Polymer project',
+164 silly install resolved     keywords: [ 'yeoman-generator', 'scaffold', 'framework', 'mvc', 'polymer' ],
+164 silly install resolved     author: { name: 'Chrome Developer Relations' },
+164 silly install resolved     main: 'app/index.js',
+164 silly install resolved     repository:
+164 silly install resolved      { type: 'git',
+164 silly install resolved        url: 'git+https://github.com/yeoman/generator-polymer.git' },
+164 silly install resolved     scripts: { test: 'jshint {app,el,gh,seed}/*.js && mocha --reporter spec' },
+164 silly install resolved     dependencies:
+164 silly install resolved      { chalk: '^1.0.0',
+164 silly install resolved        lodash: '^3.3.0',
+164 silly install resolved        ncp: '^2.0.0',
+164 silly install resolved        rimraf: '^2.2.8',
+164 silly install resolved        'validate-element-name': '^1.0.0',
+164 silly install resolved        'yeoman-generator': '^0.18.8',
+164 silly install resolved        yosay: '^1.0.0' },
+164 silly install resolved     devDependencies: { jshint: '*', mocha: '*' },
+164 silly install resolved     engines: { node: '>=0.10.0' },
+164 silly install resolved     licenses: 'BSD',
+164 silly install resolved     files: [ 'app', 'el', 'element', 'gh', 'seed', 'script-base.js', 'util.js' ],
+164 silly install resolved     gitHead: 'bfab5d4d1ca601821e6d5933b041af0d735b6d7b',
+164 silly install resolved     bugs: { url: 'https://github.com/yeoman/generator-polymer/issues' },
+164 silly install resolved     homepage: 'https://github.com/yeoman/generator-polymer#readme',
+164 silly install resolved     _id: 'generator-polymer@1.0.5',
+164 silly install resolved     _shasum: '07ec35bade32c3dcdc9660914f723305890bfc84',
+164 silly install resolved     _from: 'generator-polymer@*',
+164 silly install resolved     _npmVersion: '2.10.1',
+164 silly install resolved     _nodeVersion: '0.12.4',
+164 silly install resolved     _npmUser: { name: 'robdodson', email: 'lets.email.rob@gmail.com' },
+164 silly install resolved     maintainers:
+164 silly install resolved      [ [Object],
+164 silly install resolved        [Object],
+164 silly install resolved        [Object],
+164 silly install resolved        [Object],
+164 silly install resolved        [Object],
+164 silly install resolved        [Object],
+164 silly install resolved        [Object] ],
+164 silly install resolved     dist:
+164 silly install resolved      { shasum: '07ec35bade32c3dcdc9660914f723305890bfc84',
+164 silly install resolved        tarball: 'http://registry.npmjs.org/generator-polymer/-/generator-polymer-1.0.5.tgz' },
+164 silly install resolved     directories: {},
+164 silly install resolved     _resolved: 'https://registry.npmjs.org/generator-polymer/-/generator-polymer-1.0.5.tgz' },
+164 silly install resolved   { name: 'generator-angular-fullstack',
+164 silly install resolved     version: '2.1.0',
+164 silly install resolved     description: 'Yeoman generator for creating MEAN stack applications, using MongoDB, Express, AngularJS, and Node',
+164 silly install resolved     keywords:
+164 silly install resolved      [ 'yeoman-generator',
+164 silly install resolved        'mean',
+164 silly install resolved        'mongodb',
+164 silly install resolved        'angularjs',
+164 silly install resolved        'express',
+164 silly install resolved        'scaffold',
+164 silly install resolved        'fullstack',
+164 silly install resolved        'framework',
+164 silly install resolved        'component',
+164 silly install resolved        'front-end',
+164 silly install resolved        'app' ],
+164 silly install resolved     homepage: 'https://github.com/DaftMonk/generator-angular-fullstack',
+164 silly install resolved     bugs: { url: 'https://github.com/DaftMonk/generator-angular-fullstack/issues' },
+164 silly install resolved     author: { name: 'Tyler Henkel' },
+164 silly install resolved     repository:
+164 silly install resolved      { type: 'git',
+164 silly install resolved        url: 'git://github.com/DaftMonk/generator-angular-fullstack.git' },
+164 silly install resolved     scripts: { test: 'grunt test' },
+164 silly install resolved     dependencies:
+164 silly install resolved      { 'yeoman-generator': '~0.17.0',
+164 silly install resolved        chalk: '~0.4.0',
+164 silly install resolved        wiredep: '~0.4.2',
+164 silly install resolved        'generator-ng-component': '~0.0.4' },
+164 silly install resolved     peerDependencies: { yo: '>=1.2.0' },
+164 silly install resolved     devDependencies:
+164 silly install resolved      { chai: '^1.9.1',
+164 silly install resolved        'fs-extra': '^0.9.1',
+164 silly install resolved        grunt: '~0.4.1',
+164 silly install resolved        'grunt-build-control': 'github:daftmonk/grunt-build-control',
+164 silly install resolved        'grunt-contrib-clean': '^0.6.0',
+164 silly install resolved        'grunt-contrib-jshint': '^0.10.0',
+164 silly install resolved        'grunt-conventional-changelog': '~1.0.0',
+164 silly install resolved        'grunt-mocha-test': '^0.11.0',
+164 silly install resolved        'grunt-release': '~0.6.0',
+164 silly install resolved        'load-grunt-tasks': '~0.2.0',
+164 silly install resolved        marked: '~0.2.8',
+164 silly install resolved        mocha: '~1.21.0',
+164 silly install resolved        q: '^1.0.1',
+164 silly install resolved        semver: '~2.2.1',
+164 silly install resolved        shelljs: '^0.3.0',
+164 silly install resolved        'underscore.string': '^2.3.3' },
+164 silly install resolved     engines: { node: '>=0.10.0', npm: '>=1.2.10' },
+164 silly install resolved     licenses: [ [Object] ],
+164 silly install resolved     gitHead: '6b88efdfb1d6b3b2dcbf47e0517bfc5117247d12',
+164 silly install resolved     _id: 'generator-angular-fullstack@2.1.0',
+164 silly install resolved     _shasum: 'e06c46d4d45551951bed771d3ca1e84cf1e5dfa1',
+164 silly install resolved     _from: 'generator-angular-fullstack@*',
+164 silly install resolved     _npmVersion: '2.11.2',
+164 silly install resolved     _nodeVersion: '0.12.2',
+164 silly install resolved     _npmUser: { name: 'awk34', email: 'koroluka@gmail.com' },
+164 silly install resolved     dist:
+164 silly install resolved      { shasum: 'e06c46d4d45551951bed771d3ca1e84cf1e5dfa1',
+164 silly install resolved        tarball: 'http://registry.npmjs.org/generator-angular-fullstack/-/generator-angular-fullstack-2.1.0.tgz' },
+164 silly install resolved     maintainers: [ [Object], [Object] ],
+164 silly install resolved     directories: {},
+164 silly install resolved     _resolved: 'https://registry.npmjs.org/generator-angular-fullstack/-/generator-angular-fullstack-2.1.0.tgz' } ]
+165 info install generator-chrome-extension-kickstart@0.0.2 into /usr/local/lib
+166 info install generator-mocha@0.2.0 into /usr/local/lib
+167 info install generator-chrome-extension@0.3.1 into /usr/local/lib
+168 info install generator-polymer@1.0.5 into /usr/local/lib
+169 info install generator-angular-fullstack@2.1.0 into /usr/local/lib
+170 info installOne generator-chrome-extension-kickstart@0.0.2
+171 verbose installOne of generator-chrome-extension-kickstart to /usr/local/lib not in flight; installing
+172 info installOne generator-mocha@0.2.0
+173 verbose installOne of generator-mocha to /usr/local/lib not in flight; installing
+174 info installOne generator-chrome-extension@0.3.1
+175 verbose installOne of generator-chrome-extension to /usr/local/lib not in flight; installing
+176 info installOne generator-polymer@1.0.5
+177 verbose installOne of generator-polymer to /usr/local/lib not in flight; installing
+178 info installOne generator-angular-fullstack@2.1.0
+179 verbose installOne of generator-angular-fullstack to /usr/local/lib not in flight; installing
+180 verbose lock using /Users/chris.toomey/.npm/_locks/generator-chrome-extensi-20d0875c9129c8ab.lock for /usr/local/lib/node_modules/generator-chrome-extension-kickstart
+181 verbose lock using /Users/chris.toomey/.npm/_locks/generator-polymer-2ced2814dec48a08.lock for /usr/local/lib/node_modules/generator-polymer
+182 verbose lock using /Users/chris.toomey/.npm/_locks/generator-mocha-61e557bff6e23a34.lock for /usr/local/lib/node_modules/generator-mocha
+183 verbose lock using /Users/chris.toomey/.npm/_locks/generator-chrome-extensi-c182e046b1ca5ed1.lock for /usr/local/lib/node_modules/generator-chrome-extension
+184 verbose lock using /Users/chris.toomey/.npm/_locks/generator-angular-fullst-42a8ac57792692a3.lock for /usr/local/lib/node_modules/generator-angular-fullstack
+185 silly install write writing generator-chrome-extension-kickstart 0.0.2 to /usr/local/lib/node_modules/generator-chrome-extension-kickstart
+186 silly install write writing generator-polymer 1.0.5 to /usr/local/lib/node_modules/generator-polymer
+187 silly install write writing generator-mocha 0.2.0 to /usr/local/lib/node_modules/generator-mocha
+188 silly install write writing generator-chrome-extension 0.3.1 to /usr/local/lib/node_modules/generator-chrome-extension
+189 silly install write writing generator-angular-fullstack 2.1.0 to /usr/local/lib/node_modules/generator-angular-fullstack
+190 verbose unbuild lib/node_modules/generator-chrome-extension-kickstart
+191 verbose unbuild lib/node_modules/generator-polymer
+192 verbose unbuild lib/node_modules/generator-mocha
+193 verbose unbuild lib/node_modules/generator-chrome-extension
+194 verbose unbuild lib/node_modules/generator-angular-fullstack
+195 info preuninstall generator-chrome-extension-kickstart@0.0.2
+196 info preuninstall generator-polymer@1.0.4
+197 info preuninstall generator-chrome-extension@0.3.1
+198 info uninstall generator-chrome-extension-kickstart@0.0.2
+199 info uninstall generator-polymer@1.0.4
+200 info uninstall generator-chrome-extension@0.3.1
+201 verbose unbuild rmStuff generator-chrome-extension-kickstart@0.0.2 from /usr/local/lib/node_modules
+202 info postuninstall generator-chrome-extension-kickstart@0.0.2
+203 verbose unbuild rmStuff generator-polymer@1.0.4 from /usr/local/lib/node_modules
+204 info postuninstall generator-polymer@1.0.4
+205 verbose unbuild rmStuff generator-chrome-extension@0.3.1 from /usr/local/lib/node_modules
+206 info postuninstall generator-chrome-extension@0.3.1
+207 silly gentlyRm /usr/local/lib/node_modules/generator-chrome-extension-kickstart is being purged from base /usr/local
+208 verbose gentlyRm don't care about contents; nuking /usr/local/lib/node_modules/generator-chrome-extension-kickstart
+209 silly gentlyRm /usr/local/lib/node_modules/generator-polymer is being purged from base /usr/local
+210 verbose gentlyRm don't care about contents; nuking /usr/local/lib/node_modules/generator-polymer
+211 info preuninstall generator-mocha@0.2.0
+212 info preuninstall generator-angular-fullstack@2.0.13
+213 silly vacuum-fs purging /usr/local/lib/node_modules/generator-chrome-extension-kickstart
+214 silly vacuum-fs purging /usr/local/lib/node_modules/generator-polymer
+215 silly gentlyRm /usr/local/lib/node_modules/generator-chrome-extension is being purged from base /usr/local
+216 verbose gentlyRm don't care about contents; nuking /usr/local/lib/node_modules/generator-chrome-extension
+217 info uninstall generator-mocha@0.2.0
+218 silly vacuum-fs purging /usr/local/lib/node_modules/generator-chrome-extension
+219 info uninstall generator-angular-fullstack@2.0.13
+220 verbose unlock done using /Users/chris.toomey/.npm/_locks/generator-chrome-extensi-20d0875c9129c8ab.lock for /usr/local/lib/node_modules/generator-chrome-extension-kickstart
+221 verbose unlock done using /Users/chris.toomey/.npm/_locks/generator-polymer-2ced2814dec48a08.lock for /usr/local/lib/node_modules/generator-polymer
+222 verbose unbuild rmStuff generator-mocha@0.2.0 from /usr/local/lib/node_modules
+223 info postuninstall generator-mocha@0.2.0
+224 verbose unbuild rmStuff generator-angular-fullstack@2.0.13 from /usr/local/lib/node_modules
+225 info postuninstall generator-angular-fullstack@2.0.13
+226 verbose unlock done using /Users/chris.toomey/.npm/_locks/generator-chrome-extensi-c182e046b1ca5ed1.lock for /usr/local/lib/node_modules/generator-chrome-extension
+227 silly gentlyRm /usr/local/lib/node_modules/generator-mocha is being purged from base /usr/local
+228 verbose gentlyRm don't care about contents; nuking /usr/local/lib/node_modules/generator-mocha
+229 silly gentlyRm /usr/local/lib/node_modules/generator-angular-fullstack is being purged from base /usr/local
+230 verbose gentlyRm don't care about contents; nuking /usr/local/lib/node_modules/generator-angular-fullstack
+231 silly vacuum-fs purging /usr/local/lib/node_modules/generator-mocha
+232 silly vacuum-fs purging /usr/local/lib/node_modules/generator-angular-fullstack
+233 verbose unlock done using /Users/chris.toomey/.npm/_locks/generator-mocha-61e557bff6e23a34.lock for /usr/local/lib/node_modules/generator-mocha
+234 verbose unlock done using /Users/chris.toomey/.npm/_locks/generator-angular-fullst-42a8ac57792692a3.lock for /usr/local/lib/node_modules/generator-angular-fullstack
+235 verbose stack Error: EACCES, rmdir '/usr/local/lib/node_modules/generator-chrome-extension-kickstart'
+235 verbose stack     at Error (native)
+236 verbose cwd /Users/chris.toomey/Desktop/TableauRESTJS
+237 error Darwin 14.4.0
+238 error argv "node" "/usr/local/bin/npm" "install" "-g" "generator-angular-fullstack" "generator-chrome-extension" "generator-chrome-extension-kickstart" "generator-polymer" "generator-mocha"
+239 error node v0.12.4
+240 error npm  v2.10.1
+241 error path /usr/local/lib/node_modules/generator-chrome-extension-kickstart
+242 error code EACCES
+243 error errno -13
+244 error Error: EACCES, rmdir '/usr/local/lib/node_modules/generator-chrome-extension-kickstart'
+244 error     at Error (native)
+244 error  { [Error: EACCES, rmdir '/usr/local/lib/node_modules/generator-chrome-extension-kickstart']
+244 error   errno: -13,
+244 error   code: 'EACCES',
+244 error   path: '/usr/local/lib/node_modules/generator-chrome-extension-kickstart' }
+245 error Please try running this command again as root/Administrator.
+246 verbose exit [ -13, true ]
+247 verbose unbuild lib/node_modules/generator-chrome-extension-kickstart
+248 info preuninstall generator-chrome-extension-kickstart@0.0.2
+249 info uninstall generator-chrome-extension-kickstart@0.0.2
+250 verbose unbuild rmStuff generator-chrome-extension-kickstart@0.0.2 from /usr/local/lib/node_modules
+251 info postuninstall generator-chrome-extension-kickstart@0.0.2
+252 silly gentlyRm /usr/local/lib/node_modules/generator-chrome-extension-kickstart is being purged from base /usr/local
+253 verbose gentlyRm don't care about contents; nuking /usr/local/lib/node_modules/generator-chrome-extension-kickstart
+254 silly vacuum-fs purging /usr/local/lib/node_modules/generator-chrome-extension-kickstart
+255 error error rolling back Error: EACCES, rmdir '/usr/local/lib/node_modules/generator-chrome-extension-kickstart'
+255 error error rolling back     at Error (native)
+255 error error rolling back  { [Error: EACCES, rmdir '/usr/local/lib/node_modules/generator-chrome-extension-kickstart']
+255 error error rolling back   errno: -13,
+255 error error rolling back   code: 'EACCES',
+255 error error rolling back   path: '/usr/local/lib/node_modules/generator-chrome-extension-kickstart' }

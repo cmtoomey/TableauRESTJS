@@ -1,0 +1,22 @@
+'.source.js':
+  'Query Group':
+    'prefix': 'trqg'
+    'body': """
+            //Query Group
+            function queryGroup() {
+              var settings = {
+                "async": true,
+                "crossDomain": true,
+                "url": url + "sites/" + siteid + "/groups/",
+                "method": "GET",
+                "headers": {
+                  "x-tableau-auth": auth
+                }
+              }
+
+              $.ajax(settings).done(function(response) {
+                console.log(response);
+              });
+            }
+            
+            """

@@ -1,0 +1,21 @@
+'.source.js':
+  'Delete User from Group':
+    'prefix': 'trdug '
+    'body': """
+            //Delete User from Group
+            function deleteUserFromGroup() {
+              var settings = {
+                "async": true,
+                "crossDomain": true,
+                "url": url + "sites/" + siteid + "/groups/fdb6d216-69d3-4d0d-a51c-79d95dc3b198/users/4b10f75f-a1e7-4df4-8cd3-6b4ced0e03bc",
+                "method": "DELETE",
+                "headers": {
+                  "x-tableau-auth": auth
+                }
+              }
+
+              $.ajax(settings).done(function(response) {
+                console.log(response);
+              });
+            }
+            """

@@ -1,0 +1,23 @@
+'.source.js':
+  'Add User to Group':
+    'prefix': 'traug'
+    'body': """
+            //Add User to Group
+            //The ID (not name) of the user to add. You can get the user ID by calling getUsersOnSite()
+            function addUserToGroup() {
+              var settings = {
+                "async": true,
+                "crossDomain": true,
+                "url": url + "sites/" + siteid + "/groups/fdb6d216-69d3-4d0d-a51c-79d95dc3b198/users",
+                "method": "POST",
+                "headers": {
+                  "x-tableau-auth": auth
+                },
+                "data": "<tsRequest>\n\t<user id=\"4b10f75f-a1e7-4df4-8cd3-6b4ced0e03bc\" />\n</tsRequest>"
+              }
+
+              $.ajax(settings).done(function(response) {
+                console.log(response);
+              });
+            }
+            """

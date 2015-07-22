@@ -1,0 +1,23 @@
+'.source.js':
+  'Create Group':
+    'prefix': 'trcg'
+    'body': """
+            //Create Group
+            //Add in group name
+            function createGroup() {
+              var settings = {
+                "async": true,
+                "crossDomain": true,
+                "url": url + "sites/" + siteid + "/groups/",
+                "method": "POST",
+                "headers": {
+                  "x-tableau-auth": auth
+                },
+                "data": "<tsRequest>\n\t<group name=\"myNewGroup\" />\n</tsRequest>"
+              }
+
+              $.ajax(settings).done(function(response) {
+                console.log(response);
+              });
+            }
+            """

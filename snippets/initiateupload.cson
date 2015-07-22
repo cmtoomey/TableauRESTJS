@@ -1,0 +1,28 @@
+'.source.js':
+  'Initiate File Upload':
+    'prefix': 'trsupload'
+    'body': """
+            //Initiate File Upload
+            //Creates an empty file session which you append with Append to File Upload
+            //Use only if overall size > 64MB
+            //Once created, grab session ID for Append
+            function startFileUpload() {
+              var settings = {
+                "async": true,
+                "crossDomain": true,
+                "url": url + "sites/" + siteid + "/fileUploads",
+                "method": "POST",
+                "headers": {
+                  "x-tableau-auth": auth
+                }
+              }
+
+              $.ajax(settings).done(function(response) {
+                console.log(response);
+                getsess = response.getElementsByTagName('fileUpload')[0];
+                sess = getsess.getAttribute('uploadSessionId');
+                console.log(sess);
+                uploadsess = sess;
+              });
+            }
+            """

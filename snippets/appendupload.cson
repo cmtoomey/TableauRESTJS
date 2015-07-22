@@ -1,0 +1,43 @@
+'.source.js':
+  'Append to Upload':
+    'prefix': 'traupload'
+    'body': """
+            //Append to File Upload
+            // The format of the body for the PUT request is similar to the format of a POST request for publishing a file in one request, as described earlier. The request header must include a boundary string that is used to delimit sections of the request body. The following example shows an example of the request body for an Append to File Upload request. For this example, the boundary string has been set in the header to 12f71d3d4ae441caa0b38a5d4e0bde5e.
+            // --12f71d3d4ae441caa0b38a5d4e0bde5e
+            // Content-Disposition: name="request_payload"
+            // Content-Type: text/xml
+            //
+            //
+            // --12f71d3d4ae441caa0b38a5d4e0bde5e
+            // Content-Disposition: name="tableau_file"; filename="FILE-NAME"
+            // Content-Type: application/octet-stream
+            //
+            // <content here, with line break before boundary delimiter>
+            // --12f71d3d4ae441caa0b38a5d4e0bde5e--
+            // In the second section, the Content-Disposition line contains a filename header.
+            // The section of the example that begins with "<content here" contains the portion of the file that you want to upload. This portion cannot be larger than 64MB. Typically, however, the purpose of a multi-part upload is to be able to send smaller chunks at a time.
+            function appendUpload() {
+              var form = new FormData();
+              form.append("request_payload", "");
+              form.append("tableau_file", "");
+
+              var settings = {
+                "async": true,
+                "crossDomain": true,
+                "url": url + "sites/" + siteid + "/fileUploads/" + uploadsess,
+                "method": "PUT",
+                "headers": {
+                  "x-tableau-auth": auth
+                },
+                "processData": false,
+                "contentType": false,
+                "mimeType": "multipart/mixed",
+                "data": form
+              }
+
+              $.ajax(settings).done(function(response) {
+                console.log(response);
+              });
+            }
+            """
