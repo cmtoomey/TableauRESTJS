@@ -1,0 +1,29 @@
+'.source.js':
+  'All users in Group':
+    'prefix': 'trqug'
+    'body': """
+            //Get Users in Group
+            //<user id="user-id"
+            //name="user-name"
+            //siteRole="site-role"
+            //The siteRole value is returned as one of the following values: Interactor, Publisher, ServerAdministrator, SiteAdministrator, Unlicensed, UnlicensedWithPublish, Viewer, or ViewerWithPublish.
+            //lastLogin="date-time"
+            //externalAuthUserId="authentication-id-from-external-provider"/> - The externalAuthUserId value is returned for Tableau Online;
+            //it represents ID stored in Tableau's single sign-on (SSO) system.
+            //For other server configurations, this field contains null, and the value of lastLogin is an empty string.
+            function getUsersInGroup() {
+              var settings = {
+                "async": true,
+                "crossDomain": true,
+                "url": url + "sites/" + siteid + "/groups/fdb6d216-69d3-4d0d-a51c-79d95dc3b198/users/",
+                "method": "GET",
+                "headers": {
+                  "x-tableau-auth": auth
+                }
+              }
+
+              $.ajax(settings).done(function(response) {
+                console.log(response);
+              });
+            }
+            """

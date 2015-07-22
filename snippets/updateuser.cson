@@ -1,0 +1,27 @@
+'.source.js':
+  'Update User':
+    'prefix': 'truu'
+    'body': """
+            //Update User
+            // Modifies information about the specified user. If Tableau Server is configured to use local authentication,
+            // you can update the user's name, email address, password, or site role. If Tableau Server is configured to use Active Directory for authentication,
+            // you can change the user's display name (full name), email address, and site role.
+            // However, if you synchronize the user with Active Directory, the display name and email address will be overwritten with the information
+            // that's in Active Directory.
+            function updateUser() {
+              var settings = {
+                "async": true,
+                "crossDomain": true,
+                "url": url + "sites/" + siteid + "/users/4b10f75f-a1e7-4df4-8cd3-6b4ced0e03bc",
+                "method": "PUT",
+                "headers": {
+                  "x-tableau-auth": auth
+                },
+                "data": "<tsRequest>\n <user fullName=\"AmyK\"\n    email=\"AmyK@Amy.com\"\n    password=\"AmyK\"\n    siteRole=\"PublisherInteractor\" />\n</tsRequest>"
+              }
+
+              $.ajax(settings).done(function(response) {
+                console.log(response);
+              });
+            }
+            """

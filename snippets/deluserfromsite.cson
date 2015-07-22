@@ -1,0 +1,22 @@
+'.source.js':
+  'Delete User from Site':
+    'prefix': 'trdu'
+    'body': """
+            //Remove User from Site
+            //userid comes after /users/
+            function remUserFromSite() {
+              var settings = {
+                "async": true,
+                "crossDomain": true,
+                "url": url + "sites/" + siteid "/users/81fc3070-5661-4f9d-a1f1-e68a677ba4f1",
+                "method": "DELETE",
+                "headers": {
+                  "x-tableau-auth": auth
+                }
+              }
+
+              $.ajax(settings).done(function(response) {
+                console.log(response);
+              });
+            }
+            """

@@ -1,0 +1,31 @@
+'.source.js':
+  'Query all users on site':
+    'prefix': 'trquall'
+    'body': """
+            ///Get All Users on Site
+            //page-size and page-number are optional
+            //RETURNS
+            //<user id="user-id"
+            //name="user-name"
+            //siteRole="site-role"
+            //The siteRole value is returned as one of the following values: Interactor, Publisher, ServerAdministrator, SiteAdministrator, Unlicensed, UnlicensedWithPublish, Viewer, or ViewerWithPublish.
+            //lastLogin="date-time"
+            //externalAuthUserId="authentication-id-from-external-provider"/> - The externalAuthUserId value is returned for Tableau Online;
+            //it represents ID stored in Tableau's single sign-on (SSO) system.
+            //For other server configurations, this field contains null, and the value of lastLogin is an empty string.
+            function getUsersOnSite() {
+              var settings = {
+                "async": true,
+                "crossDomain": true,
+                "url": url + "sites/" + siteid + "/users/" + "?pageSize=page-size&pageNumber=page-number",
+                "method": "GET",
+                "headers": {
+                  "x-tableau-auth": auth
+                }
+              }
+
+              $.ajax(settings).done(function(response) {
+                console.log(response);
+              });
+            }
+            """

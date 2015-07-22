@@ -1,0 +1,26 @@
+'.source.js':
+  'Add User to Site':
+    'prefix': 'trau'
+    'body': """
+            //Add User to Site
+            //user name = username
+            //siteRole = Interactor, Publisher, SiteAdministrator, Unlicensed, UnlicensedWithPublish, Viewer, or ViewerWithPublish
+            //Returns name and user ID
+            function addUserToSite() {
+              var settings = {
+                "async": true,
+                "crossDomain": true,
+                "url": url + "sites/" + siteid "/users/",
+                "method": "POST",
+                "headers": {
+                  "x-tableau-auth": auth
+                },
+                "data": "<tsRequest>\n\t<user name=\"someone\"\n    siteRole=\"Publisher\"\n    contentAdmin=\"false\"\n    supressGettingStarted=\"false\"/>\n</tsRequest>"
+              }
+
+              $.ajax(settings).done(function(response) {
+                console.log(response);
+              });
+            }
+            
+            """
