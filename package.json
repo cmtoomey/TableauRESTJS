@@ -1,7 +1,7 @@
 {
   "name": "tableau-rest-api-snippets",
   "main": "./lib/tableau-rest-api-snippets",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "Tableau REST API Snippets - Javascript",
   "author": {
     "name": "Chris Toomey",
@@ -22,7 +22,7 @@
     "atom": ">=0.174.0 <2.0.0"
   },
   "dependencies": {},
-  "readme":"# Tableau REST API Snippets for Atom",
+  "readme": "# Tableau REST API Snippets for Atom",
   "readmeFilename": "README.md",
   "homepage": "https://github.com/cmtoomey/TableauRESTJS"
 }
