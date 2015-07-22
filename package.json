@@ -18,11 +18,11 @@
     "url": "https://github.com/cmtoomey/TableauRESTJS"
   },
   "license": "MIT",
-  "licenseFilename": "LICENSE.MD",
   "engines": {
     "atom": ">=0.174.0 <2.0.0"
   },
   "dependencies": {},
+  "readme":"# Tableau REST API Snippets for Atom",
   "readmeFilename": "README.md",
   "homepage": "https://github.com/cmtoomey/TableauRESTJS"
 }
