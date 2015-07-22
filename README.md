@@ -77,12 +77,12 @@ The full list is below.
   * Delete Project - trdpr **
   * Query All Projects - trqprall **
 5. Users
-  * Query all Users on Site - trquall
-  * Add User - trau
-  * Delete User - trdu
-  * Workbooks owned by user - trqwxu
-  * Query all Users in Group - trqug
-  * Update User - truu
+  * Query all Users on Site - trquall **
+  * Add User to Site - trau **
+  * Delete User from Site - trdu **
+  * Workbooks owned by user - trqwxu **
+  * Query all Users in Group - trqug **
+  * Update User - truu **
 6. Permissions
   * Add Permissions to Datasource - trapds
   * Query Permissions for Datasource - trqpds
