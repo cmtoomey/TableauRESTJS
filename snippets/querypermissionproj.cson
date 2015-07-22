@@ -1,0 +1,27 @@
+'.source.js':
+  'Query Project Permisions':
+    'prefix': 'trqppr'
+    'body': """
+            //Query Permissions for Project
+            //RESPONSE BODY CODES
+            // project-id, name, and owner
+            // user-id	The ID (not name) of the user
+            // group-id	The ID (not name) of the group
+            // capability-name	Valid capabilities for a data source are ChangePermissions, Connect, Delete, ExportXml, Read, and Write.
+            // capability-mode	Allow to allow the capability, or Deny to deny it. This value is case sensitive.
+            function queryPermProj() {
+              var settings = {
+                "async": true,
+                "crossDomain": true,
+                "url": url + "sites/" + siteid + "/projects/06ca4b01-f882-4f7a-b4b5-60eb8e8bff8f/permissions",
+                "method": "GET",
+                "headers": {
+                  "x-tableau-auth": auth
+                }
+              }
+
+              $.ajax(settings).done(function(response) {
+                console.log(response);
+              });
+            }
+            """

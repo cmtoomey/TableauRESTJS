@@ -1,0 +1,27 @@
+'.source.js':
+  'Add Permissions to Workbook':
+    'prefix': 'trapw'
+    'body': """
+            //Add Permission to workbook
+            // workbook-id	The <workbook> element is not required, but can be included for compatibility with earlier versions of the REST API. If the <workbook> element is included, the workbook-id value must match the workbook ID in the URI. Any other attributes in the <workbook> element are ignored.
+            // user-id	The ID (not name) of the user to add permissions for.
+            // group-id	The ID (not name) of the group to add permissions for.
+            // capability-name The capability to assign. If any capability has already been granted or denied for a specified user or group, that capability is ignored. Valid capabilities for a workbook are AddComment, ChangeHierarchy, ChangePermissions, Delete, ExportData, ExportImage, ExportXml, Filter, Read, ShareView, ViewComments, ViewUnderlyingData, WebAuthoring, and Write.
+            // capability-mode	Allow to allow the capability, or Deny to deny it. This value is case sensitive.
+            function addPermTWB() {
+              var settings = {
+                "async": true,
+                "crossDomain": true,
+                "url": url + "sites/" + siteid + "/workbooks/0ebd8bd5-5cfb-44cf-91da-751c5c4d8017/permissions",
+                "method": "PUT",
+                "headers": {
+                  "x-tableau-auth": auth
+                },
+                "data": "<tsRequest>\n  <permissions> \n    <workbook id=\"0ebd8bd5-5cfb-44cf-91da-751c5c4d8017\" />\n    <granteeCapabilities>\n      <user id=\"4b10f75f-a1e7-4df4-8cd3-6b4ced0e03bc\" />\n      <capabilities>\n        <capability name=\"write\" mode=\"allow\" />\n      </capabilities>\n    </granteeCapabilities>\n  </permissions>\n</tsRequest>\t"
+              }
+
+              $.ajax(settings).done(function(response) {
+                console.log(response);
+              });
+            }
+            """

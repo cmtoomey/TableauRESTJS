@@ -84,15 +84,15 @@ The full list is below.
   * Query all Users in Group - trqug **
   * Update User - truu **
 6. Permissions
-  * Add Permissions to Datasource - trapds
-  * Query Permissions for Datasource - trqpds
-  * Delete Permissions to Datasource - trdpds
-  * Add Permissions to Project - trappr
-  * Query Permissions to Project - trqppr
-  * Delete Permissions to Project - trdppr
-  * Add Permissions to Workbook - trapw
-  * Query Permissions for Workbook - trqpw
-  * Delete Permissions for Workbook - trdpw
+  * Add Permissions to Datasource - trapds **
+  * Query Permissions for Datasource - trqpds **
+  * Delete Permissions to Datasource - trdpds **
+  * Add Permissions to Project - trappr **
+  * Query Permissions to Project - trqppr **
+  * Delete Permissions to Project - trdppr **
+  * Add Permissions to Workbook - trapw **
+  * Query Permissions for Workbook - trqpw **
+  * Delete Permissions for Workbook - trdpw **
 7. Workbooks
   * Query Workbooks for User - trqwu
   * Add Tags to Workbook - tratagw

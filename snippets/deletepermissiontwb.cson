@@ -1,0 +1,25 @@
+'.source.js':
+  'Delete Permissions for Workbook':
+    'prefix': 'trdpw'
+    'body': """
+            //Delete Permissions for workbook
+            // group-id	The ID of the group to remove the permission for.
+            // user-id	The ID of the user to remove the permission for.
+            // capability-name The capability to remove the permission for. Valid capabilities for a data source are ChangePermissions, Connect, Delete, ExportXml, Read, and Write.
+            // capability-mode	Allow to remove the allow permission, or Deny to remove the deny permission. This value is case sensitive.
+            function delPermTWB() {
+              var settings = {
+                "async": true,
+                "crossDomain": true,
+                "url": url + "sites/" + siteid + "/workbooks/0ebd8bd5-5cfb-44cf-91da-751c5c4d8017/permissions/" + "users or groups" + "capability-name/capability-mode",
+                "method": "DELETE",
+                "headers": {
+                  "x-tableau-auth": auth
+                }
+              }
+
+              $.ajax(settings).done(function(response) {
+                console.log(response);
+              });
+            }
+            """

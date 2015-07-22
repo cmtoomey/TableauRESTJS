@@ -1,0 +1,26 @@
+'.source.js':
+  'Delete Permissions for Project':
+    'prefix': 'trdppr'
+    'body': """
+            //Delete Permissions for Project
+            // project-id The ID of the project to remove the permission for.
+            // group-id	The ID of the group to remove the permission for.
+            // user-id	The ID of the user to remove the permission for.
+            // capability-name The capability to remove the permission for. Valid capabilities for a data source are ChangePermissions, Connect, Delete, ExportXml, Read, and Write.
+            // capability-mode	Allow to remove the allow permission, or Deny to remove the deny permission. This value is case sensitive.
+            function delPermProj() {
+              var settings = {
+                "async": true,
+                "crossDomain": true,
+                "url": url + "sites/" + siteid + "/projects/06ca4b01-f882-4f7a-b4b5-60eb8e8bff8f/permissions/" + "users or groups" + "capability-name/capability-mode",
+                "method": "DELETE",
+                "headers": {
+                  "x-tableau-auth": auth
+                }
+              }
+
+              $.ajax(settings).done(function(response) {
+                console.log(response);
+              });
+            }
+            """

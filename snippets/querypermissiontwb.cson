@@ -1,0 +1,27 @@
+'.source.js':
+  'Query Permissions for Workbook':
+    'prefix': 'trqpw'
+    'body': """
+            //Query Permission to workbook
+            //RESPONSE BODY CODES
+            // workbook-id, name, and owner
+            // user-id	The ID (not name) of the user
+            // group-id	The ID (not name) of the group
+            // capability-name	Valid capabilities for a data source are ChangePermissions, Connect, Delete, ExportXml, Read, and Write.
+            // capability-mode	Allow to allow the capability, or Deny to deny it. This value is case sensitive.
+            function queryPermTWB() {
+              var settings = {
+                "async": true,
+                "crossDomain": true,
+                "url": url + "sites/" + siteid + "/workbooks/0ebd8bd5-5cfb-44cf-91da-751c5c4d8017/permissions",
+                "method": "GET",
+                "headers": {
+                  "x-tableau-auth": auth
+                }
+              }
+
+              $.ajax(settings).done(function(response) {
+                console.log(response);
+              });
+            }
+            """

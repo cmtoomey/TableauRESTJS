@@ -1,0 +1,28 @@
+'.source.js':
+  'Add Permissions to Data Source':
+    'prefix': 'trapds'
+    'body': """
+            //Add Permissions to Datasource
+            // datasource-id	The <datasource> element is not required, but can be included for compatibility with earlier versions of the REST API. If the <datasource> element is included, the datasource-id value must match the data source ID in the URI. Any other attributes in the <datasource> element are ignored.
+            // user-id	The ID (not name) of the user to add permissions for.
+            // group-id	The ID (not name) of the group to add permissions for.
+            // capability-name	The capability to assign. Valid capabilities for a data source are ChangePermissions, Connect, Delete, ExportXml, Read, and Write.
+            // For more information, see Permissions.
+            // capability-mode	Allow to allow the capability, or Deny to deny it. This value is case sensitive.
+            function addPermDS() {
+              var settings = {
+                "async": true,
+                "crossDomain": true,
+                "url": url + "sites/" + siteid "/datasources/73bc79fd-1641-4aa5-a126-fd2ed5d431ad/permissions",
+                "method": "PUT",
+                "headers": {
+                  "x-tableau-auth": auth
+                },
+                "data": "<tsRequest>\n  <permissions> \n    <datasource id=\"73bc79fd-1641-4aa5-a126-fd2ed5d431ad\" />\n    <granteeCapabilities>\n      <user id=\"4b10f75f-a1e7-4df4-8cd3-6b4ced0e03bc\" />\n      <capabilities>\n        <capability name=\"write\" mode=\"allow\" />\n      </capabilities>\n    </granteeCapabilities>\n  </permissions>\n</tsRequest>\t"
+              }
+
+              $.ajax(settings).done(function(response) {
+                console.log(response);
+              });
+            }
+            """
