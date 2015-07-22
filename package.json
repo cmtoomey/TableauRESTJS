@@ -1,6 +1,6 @@
 {
-  "name": "tableau-rest-snippets",
-  "main": "./lib/tableau-rest-snippets",
+  "name": "tableau-rest-api-snippets",
+  "main": "./lib/tableau-rest-api-snippets",
   "version": "1.0",
   "description": "Tableau REST API Snippets - Javascript",
   "author": {
