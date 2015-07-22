@@ -39,8 +39,12 @@ The items that go into **[activity]** and **[target]** fall into a few categorie
 - Workbooks (w)
 
 ####Example
-If you want to create a site: 'trcs'. If you want to delete a user: 'trdu'.
-The full list is below.
+If you want to login, use 'trlogin'.
+![alt tag](http://Users/chris.toomey/Desktop/login.gif)
+
+If you want to create a site, use 'trcs'.
+
+If you want to get a Workbook's thumbnail, use 'trqwi'
 
 ##Full list of functions and snippets
 - Login - trlogin **
