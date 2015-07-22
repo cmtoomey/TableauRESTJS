@@ -1,0 +1,21 @@
+'.source.js':
+  'Query Projects':
+    'prefix': 'trqpr'
+    'body': """
+            //Query Projects
+            function queryProjects() {
+              var settings = {
+                "async": true,
+                "crossDomain": true,
+                "url": url + "sites/" + siteid + "/projects",
+                "method": "GET",
+                "headers": {
+                  "x-tableau-auth": auth
+                }
+              }
+
+              $.ajax(settings).done(function(response) {
+                console.log(response);
+              });
+            }
+            """

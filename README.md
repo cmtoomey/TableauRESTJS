@@ -61,21 +61,21 @@ The full list is below.
   * Update Datasource Connection - trudc **
   * Query Datasource Connection for workbook - trqdw **
   * Publish Datasource - trpd **
-  * File Upload Start - trsupload
-  * Append to Upload - traupload
-  * Publish from Upload - trpupload
+  * File Upload Start - trsupload **
+  * Append to Upload - traupload **
+  * Publish from Upload - trpupload **
 3. Groups
-  * Create Group - trcg
-  * Query Group - trqg
-  * Update Group - trug
-  * Add User to Group - traug
-  * Delete User from Group - trdug
+  * Create Group - trcg **
+  * Query Group - trqg **
+  * Update Group - trug **
+  * Add User to Group - traug **
+  * Delete User from Group - trdug **
 4. Projects
-  * Query Projects - trqpr
-  * Create Project - trcpr
-  * Update Project - trupr
-  * Delete Project - trdpr
-  * Query All Projects - trqprall
+  * Query Projects - trqpr **
+  * Create Project - trcpr **
+  * Update Project - trupr **
+  * Delete Project - trdpr **
+  * Query All Projects - trqprall **
 5. Users
   * Query all Users on Site - trquall
   * Add User - trau

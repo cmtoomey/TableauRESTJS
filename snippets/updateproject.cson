@@ -1,0 +1,26 @@
+'.source.js':
+  'Update Project':
+    'prefix': 'trupr'
+    'body': """
+            //Update Project
+            //can use project name
+            //can use project description
+            //syntax is the same as create project
+            //Project ID comes after /projects/
+            function updateProject() {
+              var settings = {
+                "async": true,
+                "crossDomain": true,
+                "url": url + "sites/" + siteid + "/projects/f22ffc0e-74da-4c13-924f-f3d4b65d949b",
+                "method": "PUT",
+                "headers": {
+                  "x-tableau-auth": auth
+                },
+                "data": "<tsRequest> \n  <project description=\"A new project created with the REST API which has been UPDATED\" /> \n</tsRequest>\n"
+              }
+
+              $.ajax(settings).done(function(response) {
+                console.log(response);
+              });
+            }
+            """

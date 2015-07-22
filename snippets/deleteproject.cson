@@ -1,0 +1,22 @@
+'.source.js':
+  'Delete Project':
+    'prefix': 'trdpr'
+    'body': """
+            //Delete Project
+            //Project ID comes after /projects/
+            function deleteProject() {
+              var settings = {
+                "async": true,
+                "crossDomain": true,
+                "url": url + "sites/" + siteid + "/projects/17ea7f56-c291-452f-80db-5ba9f00c5f55",
+                "method": "DELETE",
+                "headers": {
+                  "x-tableau-auth": auth
+                }
+              }
+
+              $.ajax(settings).done(function(response) {
+                console.log(response);
+              });
+            }
+            """

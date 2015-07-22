@@ -1,0 +1,24 @@
+'.source.js':
+  'Create Project':
+    'prefix': 'trcpr'
+    'body': """
+            //Create Project
+            //Project name
+            //Project description
+            function createSite() {
+              var settings = {
+                "async": true,
+                "crossDomain": true,
+                "url": url + "sites/" + siteid + "/projects",
+                "method": "POST",
+                "headers": {
+                  "x-tableau-auth": auth
+                },
+                "data": "<tsRequest> \n  <project name=\"myNewProj\"  \n    description=\"A new project created with the REST API\" /> \n</tsRequest>\n"
+              }
+
+              $.ajax(settings).done(function(response) {
+                console.log(response);
+              });
+            }
+            """

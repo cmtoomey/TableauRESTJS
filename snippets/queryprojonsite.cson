@@ -1,0 +1,23 @@
+'.source.js':
+  'Query Projects on Site':
+    'prefix': 'trqprall'
+    'body': """
+            //Query Project - get all projects on a site
+            //Page Size - Number of items to return in one response
+            //Page Number - Offset for paging. Default is 1
+            function queryProject() {
+              var settings = {
+                "async": true,
+                "crossDomain": true,
+                "url": url + "sites/" + siteid "/projects?pageSize=page-size&pageNumber=page-number",
+                "method": "GET",
+                "headers": {
+                  "x-tableau-auth": "f2b0b23041f8519dc93389e0002306ed"
+                }
+              }
+
+              $.ajax(settings).done(function(response) {
+                console.log(response);
+              });
+            }
+            """
