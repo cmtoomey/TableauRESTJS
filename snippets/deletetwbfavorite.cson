@@ -1,0 +1,22 @@
+'.source.js':
+  'Delete Workbook from favorites':
+    'prefix': 'trdwfav'
+    'body': """
+            //Delete Workbook from favorites
+            function deleteWorkbookFromFavorite() {
+              var settings = {
+                "async": true,
+                "crossDomain": true,
+                "url": url + "sites/" + siteid + "/favorites/fd0f2b7e-6594-4105-a179-128b30d42c79/workbooks/efbbe45a-89ec-11e3-8e3a-1bae9933f8ef",
+                "method": "DELETE",
+                "headers": {
+                  "x-tableau-auth": auth
+                },
+                "data": "\n\n"
+              }
+
+              $.ajax(settings).done(function(response) {
+                console.log(response);
+              });
+            }
+            """

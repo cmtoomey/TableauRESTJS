@@ -1,0 +1,22 @@
+'.source.js':
+  'Delete Tag from Workbook':
+    'prefix': 'trdtagw'
+    'body': """
+            //Delete Tags from Workbook
+            function deleteTagsFromWorkbook() {
+              var settings = {
+                "async": true,
+                "crossDomain": true,
+                "url": url + "sites/" + siteid + "/workbooks/efbbe45a-89ec-11e3-8e3a-1bae9933f8ef/tags/tag2",
+                "method": "DELETE",
+                "headers": {
+                  "x-tableau-auth": auth
+                },
+                "data": "<tsRequest> \n  <workbook id=\"efbbe45a-89ec-11e3-8e3a-1bae9933f8ef\">\n    <tags> \n      <tag label=\"Tagged by the REST API\" /> \n      <tag label=\"tag2\" />\n    </tags> \n  </workbook> \n</tsRequest>\n"
+              }
+
+              $.ajax(settings).done(function(response) {
+                console.log(response);
+              });
+            }
+            """

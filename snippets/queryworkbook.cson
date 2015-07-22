@@ -1,0 +1,30 @@
+'.source.js':
+  'Query Workbook':
+    'prefix': 'trqw'
+    'body': """
+            //Query Workbook
+            //RETURNS
+            //workbook id, name
+            //contentURL, showTabs
+            //project id, name
+            //tags
+            //views
+            //view id
+            //add ?previewImage=true to also return PNG
+            function queryWorkbook() {
+              var settings = {
+                "async": true,
+                "crossDomain": true,
+                "url": url + "sites/" + siteid + "/workbooks/0ebd8bd5-5cfb-44cf-91da-751c5c4d8017" + "?previewImage=true",
+                ,
+                "method": "GET",
+                "headers": {
+                  "x-tableau-auth": auth
+                }
+              }
+
+              $.ajax(settings).done(function(response) {
+                console.log(response);
+              });
+            }
+            """

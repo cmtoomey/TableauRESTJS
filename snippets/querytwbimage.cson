@@ -1,0 +1,22 @@
+'.source.js':
+  'Query Workbook with Preview Image':
+    'prefix': 'trqwi'
+    'body': """
+            //Query Workbook with Preview Image
+            //returns preview Image in PNG
+            function queryWorkbookImage() {
+              var settings = {
+                "async": true,
+                "crossDomain": true,
+                "url": url + "sites/" + siteid + "/workbooks/efbbe45a-89ec-11e3-8e3a-1bae9933f8ef/previewImage",
+                "method": "GET",
+                "headers": {
+                  "x-tableau-auth": auth
+                }
+              }
+
+              $.ajax(settings).done(function(response) {
+                console.log(response);
+              });
+            }
+            """

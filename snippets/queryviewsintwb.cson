@@ -1,0 +1,24 @@
+'.source.js':
+  'Query Views for Workbook':
+    'prefix': 'trqwv'
+    'body': """
+            //Query Views for a Workbook
+            //Add includeUsageStatistics for Usage Stats
+            //Returns view id, name
+            //optional return usage totalViewCount
+            function queryViewsInWorkbook() {
+              var settings = {
+                "async": true,
+                "crossDomain": true,
+                "url": url + "sites/" + siteid + "/workbooks/efbbe45a-89ec-11e3-8e3a-1bae9933f8ef/views/" + "?includeUsageStatistics=get-usage-information",
+                "method": "GET",
+                "headers": {
+                  "x-tableau-auth": auth
+                }
+              }
+
+              $.ajax(settings).done(function(response) {
+                console.log(response);
+              });
+            }
+            """

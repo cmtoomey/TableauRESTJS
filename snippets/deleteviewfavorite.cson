@@ -1,0 +1,24 @@
+'.source.js':
+  'Delete View from Favorite':
+    'prefix': 'trdwvfav'
+    'body': """
+            //Delete View from favorites
+            //data section visible in Postman, not in documentation.
+            function deleteViewFromFavorite() {
+              var settings = {
+                "async": true,
+                "crossDomain": true,
+                "url": url + "sites/" + siteid + "/favorites/5a5f8edb-c8d1-4fd3-971c-0fb159e07f19/views/ae7a0f32-7faa-4e01-86bd-803e18ca7012",
+                "method": "DELETE",
+                "headers": {
+                  "x-tableau-auth": auth
+                },
+                //"data": "\n\n"
+              }
+
+              $.ajax(settings).done(function(response) {
+                console.log(response);
+              });
+            }
+            
+            """

@@ -1,0 +1,21 @@
+'.source.js':
+  'Delete Workbook':
+    'prefix': 'trdw'
+    'body': """
+            //Delete Workbook
+            function deleteWorkbook() {
+              var settings = {
+                "async": true,
+                "crossDomain": true,
+                "url": url + "sites/" + siteid + "/workbooks/0ebd8bd5-5cfb-44cf-91da-751c5c4d8017",
+                "method": "DELETE",
+                "headers": {
+                  "x-tableau-auth": auth
+                }
+              }
+
+              $.ajax(settings).done(function(response) {
+                console.log(response);
+              });
+            }
+            """

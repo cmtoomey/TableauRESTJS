@@ -94,23 +94,23 @@ The full list is below.
   * Query Permissions for Workbook - trqpw **
   * Delete Permissions for Workbook - trdpw **
 7. Workbooks
-  * Query Workbooks for User - trqwu
-  * Add Tags to Workbook - tratagw
-  * Delete Tag from Workbook - trdtagw
-  * Query Workbook - trqw
-  * Query Workbook with Preview Image - trqwi
-  * Query Views - trqwv
-  * Query Views with Preview Image - trqwvi
-  * Add Workbook to favorite - trawfav
-  * Delete Workbook from favorite - trdwfav
-  * Add View to favorite - trawvfav
-  * Delete View from favorites - trdwvfav
-  * Delete Workook - trdw
-  * Update Workbook's Project/Owner - truw
-  * Publish Workbook - trpw
-  * Download Workbook - trdownw
-  * Query Workbook Data Connection - trqwdata
-  * Update Workbbok Data Connection - truwdata
+  * Query Workbooks for User - trqwu **
+  * Add Tags to Workbook - tratagw **
+  * Delete Tag from Workbook - trdtagw **
+  * Query Workbook - trqw **
+  * Query Workbook with Preview Image - trqwi **
+  * Query Views - trqwv **
+  * Query Views with Preview Image - trqwvi **
+  * Add Workbook to favorite - trawfav **
+  * Delete Workbook from favorite - trdwfav **
+  * Add View to favorite - trawvfav **
+  * Delete View from favorites - trdwvfav **
+  * Delete Workbook - trdw **
+  * Update Workbook's Project/Owner - truw **
+  * Publish Workbook - trpw **
+  * Download Workbook - trdownw **
+  * Query Workbook Data Connection - trqwdata **
+  * Update Workbbok Data Connection - truwdata **
 
 
 ## License

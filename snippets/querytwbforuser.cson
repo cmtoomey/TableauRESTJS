@@ -1,0 +1,31 @@
+'.source.js':
+  'Query Workbooks for User':
+    'prefix': 'trqwu'
+    'body': """
+            //Query Workbooks for User
+            // isOwner	(Optional) true to return workbooks that the specified user owns, or false to return workbooks that the specified user has read access to. The default is false.
+            // page-size	(Optional) The number of items to return in one response. The default is 100. For more information, see Paginating Results.
+            // page-number	(Optional) The offset for paging. The default is 1. For more information, see Paginating Results.
+            //RETURNS
+            //Workbook id, workbook name
+            //contentUrl
+            //showTabs
+            //project id, name
+            //owner id
+            //tags
+            function queryWorkbooksForUser() {
+              var settings = {
+                "async": true,
+                "crossDomain": true,
+                "url": url + "sites/" + siteid + "/users/12d0eb42-1112-4df5-b60d-5dc18aaf3294/workbooks" + "?ownedBy=isOwner&pageSize=page-size&pageNumber=page-number",
+                "method": "GET",
+                "headers": {
+                  "x-tableau-auth": auth
+                }
+              }
+
+              $.ajax(settings).done(function(response) {
+                console.log(response);
+              });
+            }
+            """

@@ -1,0 +1,29 @@
+'.source.js':
+  'Publish Workbbok':
+    'prefix': 'trpw'
+    'body': """
+            //Publish Workbook
+            function publishWorkbook() {
+              var form = new FormData();
+              form.append("request_payload", "<tsRequest><workbook name=\"restWorkbook\" ><project id=\"06ca4b01-f882-4f7a-b4b5-60eb8e8bff8f\" ></project></workbook></tsRequest>");
+              form.append("tableau_workbook", "PATH TO Workbook");
+
+              var settings = {
+                "async": true,
+                "crossDomain": true,
+                "url": url + "sites/" + siteid + "/workbooks?overwrite=true",
+                "method": "POST",
+                "headers": {
+                  "x-tableau-auth": auth
+                },
+                "processData": false,
+                "contentType": false,
+                "mimeType": "multipart/mixed",
+                "data": form
+              }
+
+              $.ajax(settings).done(function(response) {
+                console.log(response);
+              });
+            }
+            """

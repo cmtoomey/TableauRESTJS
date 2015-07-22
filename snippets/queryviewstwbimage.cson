@@ -1,0 +1,21 @@
+'.source.js':
+  'Query View with Image':
+    'prefix': 'trqwvi'
+    'body': """
+            //Query View with Preview Image
+            function queryViewPreviewImage() {
+              var settings = {
+                "async": true,
+                "crossDomain": true,
+                "url": url + "sites/" + siteid + "/workbooks/efbbe45a-89ec-11e3-8e3a-1bae9933f8ef/views/f01d86a6-89ec-11e3-a04c-7f2aac50fa01/previewImage",
+                "method": "GET",
+                "headers": {
+                  "x-tableau-auth": auth
+                }
+              }
+
+              $.ajax(settings).done(function(response) {
+                console.log(response);
+              });
+            }
+            """
