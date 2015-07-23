@@ -40,13 +40,13 @@ The items that go into **[activity]** and **[target]** fall into a few categorie
 
 ####Example
 If you want to login, use 'trlogin'.
-![login](https://github.com/cmtoomey/Tableaustuff/blob/master/login.gif?raw=true)
+\n![login](https://github.com/cmtoomey/Tableaustuff/blob/master/login.gif?raw=true)
 
 If you want to create a site, use 'trcs'.
-![site](https://github.com/cmtoomey/Tableaustuff/blob/master/createsite.gif?raw=true)
+\n![site](https://github.com/cmtoomey/Tableaustuff/blob/master/createsite.gif?raw=true)
 
 If you want to get a Workbook's thumbnail, use 'trqwi'
-![thumb](https://github.com/cmtoomey/Tableaustuff/blob/master/queryimage.gif?raw=true)
+\n![thumb](https://github.com/cmtoomey/Tableaustuff/blob/master/queryimage.gif?raw=true)
 
 ##Full list of functions and snippets
 - Login - trlogin **
