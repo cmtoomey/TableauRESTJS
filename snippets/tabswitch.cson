@@ -1,0 +1,8 @@
+'.source.js':
+  'Tabswitch':
+    'prefix': 'tjstab'
+    'body': """
+                function switchTab() {
+                workbook.activateSheetAsync("SHEET NAME");
+            }
+                """

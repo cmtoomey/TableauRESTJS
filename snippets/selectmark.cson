@@ -1,0 +1,11 @@
+'.source.js':
+  'Select Mark':
+    'prefix': 'tjsmark'
+    'body': """
+              function selectSingleValue() {
+                workbook.getActiveSheet().selectMarksAsync(
+              "DIMENSION",
+              "VALUE",
+              tableau.SelectionUpdateType.REPLACE);
+            }
+              """

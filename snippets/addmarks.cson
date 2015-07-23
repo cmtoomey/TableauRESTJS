@@ -1,0 +1,11 @@
+'.source.js':
+  'Add Marks':
+    'prefix': 'tjsaddmark'
+    'body': """
+                function addValuesToSelection() {
+                  workbook.getActiveSheet().selectMarksAsync(
+                "DIMENSION",
+                ["VALUE", "VALUE"],
+                tableau.FilterUpdateType.ADD);
+            }
+                """

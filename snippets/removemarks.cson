@@ -1,0 +1,13 @@
+'.source.js':
+  'Remove Marks':
+    'prefix': 'tjsremmark'
+    'body': """
+    function removeFromSelection() {
+      workbook.getActiveSheet().selectMarksAsync(
+    "DIMENSION/MEASURE",
+    {
+      max: VALUE
+    },
+    tableau.FilterUpdateType.REMOVE);
+}
+    """

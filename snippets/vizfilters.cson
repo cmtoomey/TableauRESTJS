@@ -1,0 +1,51 @@
+'.source.js':
+  'Tableau Filters':
+    'prefix': 'tjsfilter'
+    'body': """
+                //Set a Filter
+                function filterSingleValue() {
+                activeSheet.applyFilterAsync(
+                "DIMENSION",
+                "VALUE",
+                tableau.FilterUpdateType.REPLACE);
+            }
+                //Add to a Filter
+                function addValuesToFilter() {
+                activeSheet.applyFilterAsync(
+                "DIMENSION",
+                ["VALUE", "VALUE"],
+                tableau.FilterUpdateType.ADD);
+            }
+                //Remove Values from Filter
+                function removeValuesFromFilter() {
+                activeSheet.applyFilterAsync(
+                "DIMENSION",
+                "VALUE",
+                tableau.FilterUpdateType.REMOVE);
+            }
+                //Filter Range of Values
+                function filterRangeOfValues() {
+                activeSheet.applyRangeFilterAsync(
+                "DIMENSION",
+                {
+                  min: MIN,
+                  max: MAX
+                },
+                tableau.FilterUpdateType.REPLACE);
+            }
+                //Clear Filters
+                function clearFilters() {
+                activeSheet.clearFilterAsync("DIMENSION");
+                activeSheet.clearFilterAsync("DIMENSION");
+            }
+                //Relative Dates
+                function relativeDates() {
+                activesheet.applyRelativeFilterAsync(
+                {
+                  anchorDate:,
+                  periodType:,
+                  rangeType:,
+                  rangeN:
+                })
+            }
+                """

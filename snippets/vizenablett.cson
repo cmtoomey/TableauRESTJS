@@ -1,0 +1,14 @@
+'.source.js':
+  'Viz with Trusted Tickets':
+    'prefix': 'tjstt'
+    'body': """
+            var placeholderDiv = document.getElementById("tableauViz");
+            //after /trusted/ is the trusted ticket you received
+            var url = "http://tabserver/trusted/Etdpsm_Ew6rJY-9kRrALjauU/views/workbookname/viewname";
+            var options = {
+               hideTabs: true,
+               width: "800px",
+               height: "700px"
+            };
+            var viz = new tableau.Viz(placeholderDiv, url, options);
+                """

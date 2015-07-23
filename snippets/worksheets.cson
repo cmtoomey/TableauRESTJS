@@ -1,0 +1,34 @@
+'.source.js':
+  'Get Worksheet Data':
+    'prefix': 'tjswork'
+    'body': """
+            //Workbooks created in Tableau Desktop contain worksheets and, sometimes, one or more dashboards.
+            //The dashboards themselves typically contain one or more worksheets. This is why, in the API, the concept of "sheet" encompasses both worksheets and dashboards.
+            //Worksheet and dashboard objects do not have the same set of actions, however.
+            //Worksheets are the only entry point for acting on both worksheet and dashboard objects. You can't act directly on a dashboard object.
+            function querySheets() {
+              var sheets = workbook.getPublishedSheetsInfo();
+              var text = getSheetsAlertText(sheets);
+              text = "Sheets in the workbook:\n" + text;
+              alert(text);
+              }
+
+            function queryDashboard() {
+              workbook.activateSheetAsync("GDP per Capita Dashboard")
+              .then(function (dashboard) {
+                var worksheets = dashboard.getWorksheets();
+                var text = getSheetsAlertText(worksheets);
+                text = "Worksheets in the dashboard:\n" + text;
+                alert(text);
+                });
+              }
+
+            function changeDashboardSize() {
+              workbook.activateSheetAsync("GDP per Capita Dashboard")
+              .then(function (dashboard) {
+                dashboard.changeSizeAsync({
+                  behavior: tableau.SheetSizeBehavior.AUTOMATIC
+                  });
+                });
+              }
+            """

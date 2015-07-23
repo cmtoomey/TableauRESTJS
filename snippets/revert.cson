@@ -1,0 +1,8 @@
+'.source.js':
+  'Revert':
+    'prefix': 'tjsrev'
+    'body': """
+            function revertAll() {
+              workbook.revertAllAsync();
+            }  
+            """

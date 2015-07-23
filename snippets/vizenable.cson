@@ -1,0 +1,21 @@
+'.source.js':
+  'Bootstrap a Viz':
+    'prefix': 'tjsgo'
+    'body': """
+            //you need a div
+            //you need a tableau server url
+            var placeholderDiv = document.getElementById("tableauViz");
+            var url = "http://my-server/views/my-workbook/my-view";
+            var options = {
+               hideTabs: true,
+               width: "800px",
+               height: "700px",
+               //This fires when the Viz is ready
+               onFirstInteractive: function() {
+                 // The viz is now ready and can be safely used.
+                 workbook = viz.getWorkbook();
+                 activesheet = workbook.getActiveSheet();
+               }
+            };
+            var viz = new tableau.Viz(placeholderDiv, url, options);
+                """

@@ -1,0 +1,8 @@
+'.source.js':
+  'Export crosstab':
+    'prefix': 'tjscrosstab'
+    'body': """
+            function exportCrossTab() {
+              viz.showExportCrossTabDialog();
+            }  
+            """

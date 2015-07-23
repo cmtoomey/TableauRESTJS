@@ -1,0 +1,8 @@
+'.source.js':
+  'Export Data':
+    'prefix': 'tjsdata'
+    'body': """
+            function exportData() {
+              viz.showExportDataDialog();
+            }  
+            """

@@ -1,0 +1,8 @@
+'.source.js':
+  'Export Image':
+    'prefix': 'tjsimage'
+    'body': """
+            function exportImage() {
+              viz.showExportImageDialog();
+            } 
+            """

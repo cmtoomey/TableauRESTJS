@@ -1,0 +1,8 @@
+'.source.js':
+  'Export PDF':
+    'prefix': 'tjspdf'
+    'body': """
+            function exportPDF() {
+              viz.showExportPDFDialog();
+            } 
+            """

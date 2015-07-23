@@ -1,0 +1,54 @@
+'.source.js':
+  'Add Event Listener':
+    'prefix': 'tjsevent'
+    'body': """
+              //Here's the list of events
+              //customviewload
+              //customviewremove
+              //customviewsave
+              //customviewsetdefault
+              //filterchange
+              //marksselection
+              //parametervaluechange
+              //storypointswitch
+              //tabswitch
+              //vizresize
+              //This is a demo script for an event listener
+
+              //This listens for the marks and then runs the next function
+              function listenToMarksSelection() {
+                viz.addEventListener(tableau.TableauEventName.MARKS_SELECTION, onMarksSelection);
+              }
+
+              //This takes the marks event and gets the marks themselves
+              function onMarksSelection(marksEvent) {
+                return marksEvent.getMarksAsync().then(reportSelectedMarks);
+              }
+
+              //This takes the mark values checkes the index (number of marks)
+              //Using that data, it's taking the individual marks (which have a pair - fieldName and formattedValue)
+              //Those pairs are then pushed into a HTML element as an alert that you can see on screen.
+              function reportSelectedMarks(marks) {
+                var html = [];
+                for (var markIndex = 0; markIndex < marks.length; markIndex++) {
+                  var pairs = marks[markIndex].getPairs();
+                  html.push("<b>Mark " + markIndex + ":</b><ul>");
+                  for (var pairIndex = 0; pairIndex < pairs.length; pairIndex++) {
+                    var pair = pairs[pairIndex];
+                    html.push("<li><b>fieldName:</b> " + pair.fieldName);
+                    html.push("<br/><b>formattedValue:</b> " + pair.formattedValue + "</li>");
+                  }
+                  html.push("</ul>");
+                }
+
+                var dialog = $("#dialog");
+                dialog.html(html.join(""));
+                dialog.dialog("open");
+                }
+            });
+            //You can also apply the following to the events
+            //getViz(); getEventName();getCustomViewAsync();getWorksheet();getFieldName();
+            //getFilterAsync();getMarksAsync();getParameterName();getOldStoryPointInfo();getNewStoryPoint();
+            //getOldSheetName();getNewSheetName();getAvailableSize();
+            //you can remove with viz.removeEventListener
+                """
