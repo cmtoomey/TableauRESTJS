@@ -13,7 +13,7 @@
               var settings = {
                 "async": true,
                 "crossDomain": true,
-                "url": url + "sites/" + siteid + "/workbooks/0ebd8bd5-5cfb-44cf-91da-751c5c4d8017/permissions",
+                "url": url + "sites/" + siteid + "/workbooks/"+workbookID,
                 "method": "GET",
                 "headers": {
                   "x-tableau-auth": auth

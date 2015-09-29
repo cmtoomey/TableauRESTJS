@@ -15,7 +15,7 @@
               var settings = {
                 "async": true,
                 "crossDomain": true,
-                "url": url + "sites/" + siteid + "/groups/fdb6d216-69d3-4d0d-a51c-79d95dc3b198/users/",
+                "url": url + "sites/" + siteid + "/groups/"+group ID+"/users/",
                 "method": "GET",
                 "headers": {
                   "x-tableau-auth": auth

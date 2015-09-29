@@ -17,7 +17,7 @@
               var settings = {
                 "async": true,
                 "crossDomain": true,
-                "url": url + "sites/" + siteid + "/users/12d0eb42-1112-4df5-b60d-5dc18aaf3294/workbooks" + "?ownedBy=isOwner&pageSize=page-size&pageNumber=page-number",
+                "url": url + "sites/" + siteid + "/users/"+userID+"/workbooks" + "?ownedBy=isOwner&pageSize=page-size&pageNumber=page-number",
                 "method": "GET",
                 "headers": {
                   "x-tableau-auth": auth

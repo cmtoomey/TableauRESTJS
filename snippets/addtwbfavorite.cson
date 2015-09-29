@@ -7,12 +7,12 @@
               var settings = {
                 "async": true,
                 "crossDomain": true,
-                "url": url + "sites/" + siteid + "/favorites/fd0f2b7e-6594-4105-a179-128b30d42c79",
+                "url": url + "sites/" + siteid + "/favorites/"+ favoriteID,
                 "method": "PUT",
                 "headers": {
                   "x-tableau-auth": auth
                 },
-                "data": "<tsRequest> \n  <favorite label=\"I was Favorited by REST\"> \n    <workbook id=\"efbbe45a-89ec-11e3-8e3a-1bae9933f8ef\" /> \n  </favorite> \n</tsRequest>\n\n"
+                "data": "<tsRequest> \n  <favorite label=\"I was Favorited by REST\"> \n    <workbook id=\"workbookID\" /> \n  </favorite> \n</tsRequest>\n\n"
               }
 
               $.ajax(settings).done(function(response) {

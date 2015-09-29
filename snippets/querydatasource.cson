@@ -9,7 +9,7 @@
               var settings = {
                 "async": true,
                 "crossDomain": true,
-                "url": url + "sites/" + siteid + "/datasources/73bc79fd-1641-4aa5-a126-fd2ed5d431ad",
+                "url": url + "sites/" + siteid + "/datasources/"+datasourceID,
                 "method": "GET",
                 "headers": {
                   "x-tableau-auth": auth

@@ -12,7 +12,7 @@
               var settings = {
                 "async": true,
                 "crossDomain": true,
-                "url": url + "sites/" + siteid + "/users/4b10f75f-a1e7-4df4-8cd3-6b4ced0e03bc",
+                "url": url + "sites/" + siteid + "/users/"+userID,
                 "method": "PUT",
                 "headers": {
                   "x-tableau-auth": auth

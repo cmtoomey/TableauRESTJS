@@ -11,7 +11,7 @@
               var settings = {
                 "async": true,
                 "crossDomain": true,
-                "url": url + "sites/" + siteid + "/workbooks/0ebd8bd5-5cfb-44cf-91da-751c5c4d8017/permissions/" + "users or groups" + "capability-name/capability-mode",
+                "url": url + "sites/" + siteid + "/workbooks/"+workbookID+"/permissions/" + "users or groups" + "capability-name/capability-mode",
                 "method": "DELETE",
                 "headers": {
                   "x-tableau-auth": auth

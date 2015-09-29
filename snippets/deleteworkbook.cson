@@ -7,7 +7,7 @@
               var settings = {
                 "async": true,
                 "crossDomain": true,
-                "url": url + "sites/" + siteid + "/workbooks/0ebd8bd5-5cfb-44cf-91da-751c5c4d8017",
+                "url": url + "sites/" + siteid + "/workbooks/"+workbookID,
                 "method": "DELETE",
                 "headers": {
                   "x-tableau-auth": auth

@@ -13,12 +13,12 @@
               var settings = {
                 "async": true,
                 "crossDomain": true,
-                "url": url + "sites/" + siteid + "/projects/06ca4b01-f882-4f7a-b4b5-60eb8e8bff8f/permissions",
+                "url": url + "sites/" + siteid + "/projects/"+ projectID +"/permissions",
                 "method": "PUT",
                 "headers": {
                   "x-tableau-auth": auth
                 },
-                "data": "<tsRequest>\n  <permissions> \n    <project id=\"06ca4b01-f882-4f7a-b4b5-60eb8e8bff8f\" />\n    <granteeCapabilities>\n      <user id=\"4b10f75f-a1e7-4df4-8cd3-6b4ced0e03bc\" />\n      <capabilities>\n        <capability name=\"write\" mode=\"allow\" />\n      </capabilities>\n    </granteeCapabilities>\n  </permissions>\n</tsRequest>\t"
+                "data": "<tsRequest>\n  <permissions> \n    <project id=\"projectID\" />\n    <granteeCapabilities>\n      <user id=\"userID\" />\n      <capabilities>\n        <capability name=\"write\" mode=\"allow\" />\n      </capabilities>\n    </granteeCapabilities>\n  </permissions>\n</tsRequest>\t"
               }
 
               $.ajax(settings).done(function(response) {

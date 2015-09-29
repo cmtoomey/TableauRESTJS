@@ -12,7 +12,7 @@
                 "url": url + "sites/" + siteid "/projects?pageSize=page-size&pageNumber=page-number",
                 "method": "GET",
                 "headers": {
-                  "x-tableau-auth": "f2b0b23041f8519dc93389e0002306ed"
+                  "x-tableau-auth": auth
                 }
               }
 

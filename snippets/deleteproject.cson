@@ -8,7 +8,7 @@
               var settings = {
                 "async": true,
                 "crossDomain": true,
-                "url": url + "sites/" + siteid + "/projects/17ea7f56-c291-452f-80db-5ba9f00c5f55",
+                "url": url + "sites/" + siteid + "/projects/"+projectID,
                 "method": "DELETE",
                 "headers": {
                   "x-tableau-auth": auth
