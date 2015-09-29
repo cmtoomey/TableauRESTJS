@@ -1,7 +1,7 @@
 {
   "name": "tableau-rest-api-snippets",
   "main": "./lib/tableau-rest-api-snippets",
-  "version": "0.4.0",
+  "version": "0.5.0",
   "description": "Tableau REST API Snippets - Javascript",
   "author": {
     "name": "Chris Toomey",
